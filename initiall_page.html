@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SiteWithBootstrap</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript_portotype.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylish.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">	    	
+	    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="col"></div>
+  <div class="collapse navbar-collapse col-10" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Study Helper</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">ICT</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="#">Calculus 1</a>
+          <a class="dropdown-item disabled" href="#">Linear Algebra</a>
+          <a class="dropdown-item disabled" href="#">Discrete Structures</a>
+          <a class="dropdown-item disabled" href="#">PP 1</a>
+        </div>
+      </li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Become an instructor</a>
+		</li>
+	</ul>
+	    	    <form class="form-inline">
+	    	    	<div>
+	    	    	<a href="#" class="btn btn-outline-info my-2 my-sm-0" id="loginButton" role="button">Log in</a>
+	    	    	<a href="#" class="btn btn-outline-info my-2 my-sm-0 active" id="signupButton" role="button">Sign up</a>
+	    	    	</div>
+	    	    	</form>	
+  </div> 
+  <div class="col"></div>
+	</nav>
+
+<div id="section">
+ 
+  <div class="container" id="loginCard">
+  <div class="row card mx-auto">
+    <div class="d-none d-md-flex col-md-4 col-lg-6"></div>
+    <div class="col-sm-6 offset-sm-3">
+      <div class="login d-flex align-items-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-12 mx-auto">
+              <h3 class="login-heading mb-4 text-center">Welcome</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Email address</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember me</label>
+                </div>
+                <button class="btn btn-lg btn-info btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password? </a>
+                  <span>|
+                  </span>
+                  <a class="small" href="#" id="signupLink">Create an account</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--                                         -------------------------------                            ------>
+
+<div class="container" id="signupCard">
+  <div class="row card mx-auto">
+    <div class="d-none d-md-flex col-md-4 col-lg-6"></div>
+    <div class="col-sm-6 offset-sm-3">
+      <div class="login d-flex align-items-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-12 mx-auto">
+            <h3 class="login-heading mb-4 text-center">Create an account</h3>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                <label for="inputUserame">Username</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">ID</label>
+              </div>
+            
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
+              </div>
+              
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                <label for="inputConfirmPassword">Confirm password</label>
+              </div>
+
+              <button class="btn btn-lg btn-info btn-block text-uppercase font-weight-bold" type="submit">Register</button>
+              <div class="text-center">
+                <span class="small">Already have an account?</span>
+                <a class="small" href="#" id="loginLink">Log in</a>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="searchForm container" id="searchTab">
+<h1>Study helper</h1>
+<h5> - exactly what you need</h5>
+  <div class="row">
+           <div id="custom-search-input">
+                            <div class="input-group col-md-12 col-lg-6">
+                                <input type="text" class="  search-query form-control" placeholder="What course are you looking for?" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<div id="tabs"><ul class="nav nav-tabs navbar-dark bg-dark ">
+       <div class="col"></div>
+    <li class="nav-item">
+  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Information and Commumication Technologies</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Calculus 1</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Linear Algebra</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Discrete Strutures</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Programing Principle 1</a>
+    </li>
+     <div class="col"></div>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <table class="table table-bordered table-light">
+  <tbody class="text-center">
+    <tr>
+      <td><a href="">History of computers</a></td>
+      <td><a href="">Von Neumann Architecture</a></td>
+      <td><a href="">History of Internet</a></td>
+      <td><a href="">MS Office</a></td>
+    </tr>
+    <tr>
+      <td><a href="">OS: Win, Lin</a></td>
+      <td><a href="">Security 1</a></td>
+      <td><a href="">Security 2</a></td>
+      <td><a href="">Networks</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Information Sharing</a></td>
+      <td><a href="">E-Commerce</a></td>
+      <td><a href="">Cloud Services</a></td>
+      <td><a href="">Crowd sourcing</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Open Source lecture</a></td>
+      <td><a href="">Messaging</a></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <table class="table table-bordered table-light">
+  <tbody class="text-center">
+    <tr>
+      <td><a href="">Functions and Graphss</a></td>
+      <td><a href="">Combinig Functions</a></td>
+      <td><a href="">Thrigonometric Functions</a></td>
+      <td><a href="">Exponential Functions</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Inverse Functions</a></td>
+      <td><a href="">Tangent of curves</a></td>
+      <td><a href="">Limit of a Function</a></td>
+      <td><a href="">Precise of a Limit</a></td>
+    </tr>
+    <tr>
+      <td><a href="">One-sided Limits</a></td>
+      <td><a href="">Continuity</a></td>
+      <td><a href="">Limits Involving Infinity</a></td>
+      <td><a href="">Tangents and the Derivative at a Point</a></td>
+    </tr>
+    <tr>
+      <td><a href="">The Derivative as a Rate of Change</a></td>
+      <td><a href="">Derivative of Trigonometric Functions</a></td>
+      <td><a href="">The Chain Rule</a></td>
+      <td><a href="">Implicit Differentiation</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Derivatives of Inverse Functions</a></td>
+      <td><a href="">Cloud Services</a></td>
+      <td><a href="">Inverse Thrigonometric Functions</a></td>
+      <td><a href="">Related Rates</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Differentials</a></td>
+      <td><a href="">Extreme Values of a Function</a></td>
+      <td><a href="">The Mean Value Theorem</a></td>
+      <td><a href="">Monotonic Functions; First Derivative Test</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Concavity and Curve Sketching</a></td>
+      <td><a href="">Indeterminate Form and L'Hopiral's rule</a></td>
+      <td><a href="">Antiderivatives</a></td>
+      <td><a href="">Integration by Substitution Method</a></td>
+    </tr>
+    <tr>      
+      <td><a href="">Integration by parts</a></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  </div>
+  <div id="section2"></div>
+
+<footer>
+ <div class="container">
+   <div class="row">
+   
+            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                <ul class="adress">
+                     <span>Adress</span>    
+                     <li>
+                        <p>Study Helper - exactly what you need</p>
+                      </li>
+                           
+                      <li>
+                        <p>+7 (747) 240-00-00</p>
+                      </li>
+                           
+                      <li>
+                        <p>marina.neymar.13@gmail.com</p>
+                      </li>
+                 </ul>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <ul class="contact">
+                     <span>Contact</span>    
+                     <li>
+                        <a href="#">Home</a>
+                      </li>
+                           
+                      <li>
+                         <a href="#">About</a>
+                      </li>
+                           
+                      <li>
+                        <a href="#">Blog</a>
+                      </li>
+                           
+                      <li>
+                        <a href="#">Contact</a>
+                     </li>
+                </ul>
+            </div>
+       
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+               <ul class="social">
+                          <span>Social</span>    
+                           <li>
+                                <a href="#"><i class="fas fa-facebook fa-2x"></i></a>
+                           </li>
+                          
+                           <li>
+                                <a href="#"><i class="fa fa-github fa-2x"></i></a>
+                           </li>
+                            
+                           <li>
+                                <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                           </li>
+                           
+                           <li>
+                                <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+                           </li>
+                            
+                           <li>
+                                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                          </li>
+                          
+                 </ul>
+            </div>
+       
+       
+       </div> 
+    </div>
+</footer>
+</body>
+</html>

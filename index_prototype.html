@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java - beginig</title>
+	<script type="text/javascript" href="javascript_portotype.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		/*document.write("Hello world!");
+		//document.write("<br />Hello world!");
+		var number = 12,
+			string,
+			floatNumber = 11.23,
+			whetherIsTrue = true,
+			x = 1,
+			y = 2,
+			bool = false;
+		string = "Hello world";
+		document.write(" <br />variable number is " + number);
+		document.write(" <br />");
+		var result = 6;
+		switch(result) {
+			case 1: document.write("result is 1 "); break;
+			case 2: document.write("result is 2 "); break;
+			case 3: document.write("result is 3 "); break;
+			case 4: document.write("result is 4 "); break;
+			default: document.write("result is higher than 4");
+		}
+		// Код для того, что бы использовать за место if else;
+		document.write(" <br />");
+		x > y ? document.write("Yes") : document.write("No");;
+		// Типа сложно опеартор для пониманя, но очень короткий;
+		var i;
+		for (i = 0; i < 10; i++) {
+			document.write(i + "<br />");
+		}
+		var x = 0;
+		while (x < 10) {
+			x++;
+		}
+		var y = 100;
+		do {
+			document.write("<br /> Цикл сработал");
+		} while(y < 10);
+		// Циклы такие же как и в С++;*/
+		//------------------------------------------------------------------------------------------------------------------------------------
+		/*var person;
+		//alert("Hello " + person);
+		if (confirm("Are you sure?")) { // Confirm has options to chose OK and CANCEL;
+			person = prompt("Hello, what is your name?"); // Prompt requires input informaion;
+			alert("Hello " + person);	// Alert has no option to chose, there is only OK;
+		} else {
+			alert("Person is not sure");
+		}*/
+		//------------------------------------------------------------------------------------------------------------------------------------
+		/*var arr = new Array("str", 1.34, 3, false);
+		document.write(arr[0] + "<br />" + arr[1]);
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i] + "<br />");
+		}
+		arr = new Array();
+		var sum = 0;
+		for (i = 0; i < 10; i++) {
+			arr[i] = i * 3;
+			document.write(arr[i] + "<br />");
+			sum += arr[i];
+		}
+		document.write("Средне арефметическая " + sum / arr.length);*/
+		//------------------------------------------------------------------------------------------------------------------------------------
+		/*function print (text) {
+			document.write(text);
+		}
+		var sum;
+		function count (x, y) {
+			sum = x + y;
+		}
+		count(7, 8);
+		print("Hello");
+		print("<br />");
+		print(sum);
+		//------------------------------------------------------------------------------------------------------------------------------------
+		/*var glob = 12;
+		var i = 10;
+		function test () {
+			glob++; // Global wariable can increase in its value;
+			var i = 5 // Global variable can not change it's value in the function; Loacal value is changed;
+		}
+		test();
+		document.write("Global is " + glob + ", variable i is " + i);*/
+		//-----------------------------------------------------------------------------------------------------------------------------------
+		/*function buttonClick (button) {
+			alert("The button was clicked");
+		}
+		var counter = 0;
+		function mousecounter (action) {
+			counter++;
+			action.innerHTML = "This text was pointed "+ counter +" times";
+		}*/ // All of this stuff is called СОБЫТИЯ;
+		/*function valid(form) {
+			var name = form.name.value,
+				password = form.pass.value,
+				passChecker = form.passChecker.value,
+				state = form.state.value,
+				email = form.email.value,
+				adr_pattern = /[a-z0-9!#$%&'*+/=?^`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^`{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;﻿ //This code is for checking email. But this is too long, so, try to find something else;
+				fail = false;
+			if (name == "" || name == " ")
+				fail = "Fill your name";
+			else if (email == "" || adr_pattern.test(email) == false) // This shit exams whether EMAIL and ADR_PATTERN are suitable to each other;
+				fail = "Fill your E-mail";
+			else if (password == "" || password == " ")
+				fail = "Fill your password";
+			else if (passChecker != password || passChecker == "")
+				fail = "Your password doesn't match";
+			else if (state == "")
+				fail = "Choese your gender";
+			if (fail)
+				alert(fail);	
+			else
+				window.location = "http://google.com";
+		}*/
+			// Iff the whole form is ok, user go to the another page;
+				//FormChecker------------------------------------------------------------------------------------------------------------*/
+	</script>
+	<!--<input type="button" name="button" value="Click me" onclick="buttonClick (this)">
+	<span onmouseover="mousecounter (this)">This text was pointed 0 times</span></br></br>
+	All the stuff above is about События---------------------------------------------------------------------------------------------------
+	<form action="" method="post" name="test" id="form">
+		<label for="name">Name</label>
+		<input type="text" name="name" placeholder="Name" id="name"></br></br>
+		<label for="email">E-mail</label>
+		<input type="text" name="email" placeholder="E-mail" id="email"></br></br>
+		<label for="pass">Password</label>
+		<input type="password" name="pass" placeholder="Pass" id="pass"></br></br>
+		<label for="passChecker">Password checker</label>
+		<input type="password" name="passChecker" placeholder="Confirm password" id="passChecker"></br></br>
+		<span>Gender</span>
+		<input type="radio" name="state" id="gender" value="Man">Man</>	
+		<input type="radio" name="state" id="gender" value="Woman">Woman</br></br>
+		<input type="button" name="button" value="Submit" onclick="valid(document.getElementById('form'))">
+		Stuff for button AND FormChecker in the further--------------------------------------------------------------------------------------------------------------
+	</form>-->
+	<script type="text/javascript">
+		var date = new Date();
+		text = "Now it is " + date.getFullYear();
+		text += "\nAnd month is " + date.getMonth();
+		alert(text);
+	</script>
+</body>
+</html>
