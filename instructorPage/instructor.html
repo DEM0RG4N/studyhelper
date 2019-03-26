@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="instructorScript.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleForInstructorPage.css">
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+	<title>Instructor Page</title>
+</head>
+<body>
+	<div class="container-fluid">
+  <div class="row no-gutter">
+
+    <div class="d-md-flex col-sm-6 col-md-6 col-lg-6 bg-image">
+		<div class="row card text-center mx-auto col-md-8 col-lg-6">
+   			<div class="card-body">
+    			<h5 class="card-title">Earn money</h5>
+    				<p class="card-text">Earn money every time a student purchases your course. Get paid monthly through PayPal or Payoneer, it’s your choice.</p>
+  			</div>
+
+     		<div class="card-body">
+    			<h5 class="card-title">Inspire students</h5>
+    				<p class="card-text">Help people learn new skills, advance their careers, and explore their hobbies by sharing your knowledge.</p>
+  			</div>
+
+     		<div class="card-body">
+    			<h5 class="card-title">Join our community</h5>
+    				<p class="card-text">Take advantage of our active community of instructors to help you through your course creation process.</p>
+  			</div>
+		</div>
+    </div>
+
+    <!--/////////////////////////////////////////////////////////////////////-->
+
+    <div id="newInstructor" class="col-sm-6 col-md-6 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4 text-center">Make a global impact</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Full name</label>
+                </div>
+
+				<div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">ID</label>
+              	</div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Confirm password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Become an instructor</button>
+                <div class="text-center">
+                <span class="small">Already have an instructor account?</span>
+                <a class="small" href="#" id="linkToOld">Log in</a>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--/////////////////////////////////////////////////////////////////////-->
+
+        <div id="instructor" class="col-sm-6 col-md-6 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4 text-center">For an instructor</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Full name</label>
+                </div>
+
+				<div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">ID</label>
+              	</div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Log in</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password? </a>
+                  <span>|
+                  </span>
+                  <a class="small" href="#" id="linkToNew">Create an account</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
