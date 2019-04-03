@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome page</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript_portotype.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylish.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">	    	
+	    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="col"></div>
+  <div class="collapse navbar-collapse col-10" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Study Helper</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="C:/Users/Fora/Desktop/html/StudyHelper/SecondaryPage/index.html">ICT</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="#">Calculus 1</a>
+          <a class="dropdown-item disabled" href="#">Linear Algebra</a>
+          <a class="dropdown-item disabled" href="#">Discrete Structures</a>
+          <a class="dropdown-item disabled" href="#">PP 1</a>
+        </div>
+      </li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Become an instructor</a>
+		</li>
+	</ul>
+	    	    <form class="form-inline">
+	    	    	<div>
+<!-- 	    	    	 <button type="button" class="btn btn-info btn-block">Start here</button> -->
+<!--             <a href="#" class="btn btn-outline-info my-2 my-sm-0" id="loginButton" role="button">Log in</a>
+	    	    	<a href="#" class="btn btn-outline-info my-2 my-sm-0 active" id="signupButton" role="button">Sign up</a> -->
+              <button type="button" class="btn btn-outline-info" id="loginButton">Log In</button>
+              <button type="button" class="btn btn-info" id="signupButton">Sing Up</button>
+	    	    	</div>
+	    	    	</form>	
+  </div> 
+  <div class="col"></div>
+	</nav>
+
+<div id="section">
+ 
+<div class="container" id="loginCard">
+  <div class="row card mx-auto">
+    <div class="col-10 mx-auto">
+      <div class="login d-flex align-items-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-12 mx-auto">
+              <h3 class="login-heading mb-4 text-center">Welcome</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Email address</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember me</label>
+                </div>
+                <button class="btn btn-lg btn-info btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password? </a>
+                  <span>|
+                  </span>
+                  <a class="small" href="#" id="signupLink">Create an account</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--                                         -------------------------------                            ------>
+
+<div class="container" id="signupCard">
+  <div class="row card mx-auto">
+    <div class="col-10 mx-auto">
+      <div class="login d-flex align-items-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-12 mx-auto">
+            <h3 class="login-heading mb-4 text-center">Create an account</h3>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                <label for="inputUserame">Username</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">ID</label>
+              </div>
+            
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
+              </div>
+              
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                <label for="inputConfirmPassword">Confirm password</label>
+              </div>
+
+              <button class="btn btn-lg btn-info btn-block text-uppercase font-weight-bold" type="submit">Register</button>
+              <div class="text-center">
+                <span class="small">Already have an account?</span>
+                <a class="small" href="#" id="loginLink">Log in</a>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="searchForm container" id="searchTab">
+<h1 class="ml-3">Problems with studying?</h1>
+<hr class="col-6" align="left">
+<p class="col-6 font-weight-light" id="landText">Study Helper assistant will help you. We aren’t a traditional university and here’s why you should join to Study helper. <a href="">Learn more</a></p>
+<!--   <div class="row">
+           <div id="custom-search-input">
+                            <div class="input-group col-md-12 col-lg-6">
+                                <input type="text" class="  search-query form-control" placeholder="What course are you looking for?" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+  </div> -->
+</div>
+
+</div>
+
+
+
+<div id="tabs"><ul class="nav nav-tabs navbar-dark bg-dark"  id="courseName">
+       <div class="col"></div>
+    <li class="nav-item">
+  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Information and Commumication Technologies</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Calculus 1</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Linear Algebra</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Discrete Strutures</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Programing Principle 1</a>
+    </li>
+     <div class="col"></div>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <table class="table table-sm table-borderless">
+  <tbody class="text-left">
+    <tr>
+      <td><a href="">History of computers</a></td>
+      <td><a href="">Von Neumann Architecture</a></td>
+      <td><a href="">History of Internet</a></td>
+      <td><a href="">MS Office</a></td>
+    </tr>
+    <tr>
+      <td><a href="">OS: Win, Lin</a></td>
+      <td><a href="">Security 1</a></td>
+      <td><a href="">Security 2</a></td>
+      <td><a href="">Networks</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Information Sharing</a></td>
+      <td><a href="">E-Commerce</a></td>
+      <td><a href="">Cloud Services</a></td>
+      <td><a href="">Crowd sourcing</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Open Source lecture</a></td>
+      <td><a href="">Messaging</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <table class="table table-sm table-borderless">
+  <tbody class="text-left">
+    <tr>
+      <td><a href="">Functions and Graphss</a></td>
+      <td><a href="">Combinig Functions</a></td>
+      <td><a href="">Thrigonometric Functions</a></td>
+      <td><a href="">Exponential Functions</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Inverse Functions</a></td>
+      <td><a href="">Tangent of curves</a></td>
+      <td><a href="">Limit of a Function</a></td>
+      <td><a href="">Precise of a Limit</a></td>
+    </tr>
+    <tr>
+      <td><a href="">One-sided Limits</a></td>
+      <td><a href="">Continuity</a></td>
+      <td><a href="">Limits Involving Infinity</a></td>
+      <td><a href="">Tangents and the Derivative at a Point</a></td>
+    </tr>
+    <tr>
+      <td><a href="">The Derivative as a Rate of Change</a></td>
+      <td><a href="">Derivative of Trigonometric Functions</a></td>
+      <td><a href="">The Chain Rule</a></td>
+      <td><a href="">Implicit Differentiation</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Derivatives of Inverse Functions</a></td>
+      <td><a href="">Cloud Services</a></td>
+      <td><a href="">Inverse Thrigonometric Functions</a></td>
+      <td><a href="">Related Rates</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Differentials</a></td>
+      <td><a href="">Extreme Values of a Function</a></td>
+      <td><a href="">The Mean Value Theorem</a></td>
+      <td><a href="">Monotonic Functions; First Derivative Test</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Concavity and Curve Sketching</a></td>
+      <td><a href="">Indeterminate Form and L'Hopiral's rule</a></td>
+      <td><a href="">Antiderivatives</a></td>
+      <td><a href="">Integration by Substitution Method</a></td>
+    </tr>
+    <tr>      
+      <td><a href="">Integration by Parts</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  </div>
+
+
+  <div id="section2">
+
+    <!-- begin of carouel -->
+    <!-- <div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="1000">
+        <img src="SecondaryPage/carousel-1.jpg" class="d-block mx-auto rounded" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <img src="SecondaryPage/carousel-2.jpg" class="d-block mx-auto rounded" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <img src="SecondaryPage/carousel-3.jpg" class="d-block mx-auto rounded" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+ -->
+
+
+
+
+
+
+
+<!-- <div class="row">
+  <div class="card container border-light col-4">
+    <img src="responsive.png" class="card-img-top mx-auto" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Mobility</h5>
+      <hr id="landCardTextHr">
+      <p class="card-text font-weight-light" id="landCardText">Study helper offers easy access to digital editions of books to enrich and enhance your learning experience. The platform can be used online or offline on multiple devices, anytime and anywhere.</p>
+    </div>
+  </div>
+  <div class="card container border-light col-4">
+    <img src="profiles.png" class="card-img-top mx-auto" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Flexible curriculum</h5>
+      <hr id="landCardTextHr">
+      <p class="card-text font-weight-light" id="landCardText">A student who likes studying remotely can independently decide when and how much time during the semester  should devote to the study of the materials. Also student can build an individual training schedule up to their personal time.</p>
+    </div>
+  </div>
+  <div class="card container border-light col">
+    <img src="opinion.png" class="card-img-top mx-auto" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Fast feedback</h5>
+      <hr id="landCardTextHr">
+      <p class="card-text font-weight-light" id="landCardText">Communication with Tutors is carried out in different ways: both online and off-line. Consulting a tutor via e-mail is sometimes more efficient and faster than making a personal appointment with a professor.</p>
+    </div>
+  </div>
+</div> -->
+<section class="service-sec" id="benefits">
+  <div class="container">
+    <div class="row">
+        <div class="">
+            <div class="heading mt-3">
+      <h2 class="">Study helper is an innovative educational model that was designed to develop skills needed for the achieving best results in educational process.</h2>
+      <hr id="landCardTextHr">
+      <h2 class="font-weight-light text-center">What is Study Helper for a student?</h2>
+    </div>
+        </div>
+      <div class="mx-auto mt-3">
+        <div class="row">
+            <div class="col-md-4 text-sm-center"><img src="responsive.png" alt="">
+              <hr id="landCardTextHr">
+          <h3>Mobility</h3>
+          <p>Study helper offers easy access to digital editions of books to enrich and enhance your learning experience. The platform can be used online or offline on multiple devices, anytime and anywhere.</p>
+        </div>
+        <div class="col-md-4 text-sm-center"><img src="profiles.png" alt="">
+          <hr id="landCardTextHr">
+          <h3>Flexible curriculum</h3>
+          <p>A student who likes studying remotely can independently decide when and how much time during the semester  should devote to the study of the materials. Also student can build an individual training schedule up to their personal time.</p>
+        </div>
+        <div class="col-md-4 text-sm-center"><img src="opinion.png" alt="">
+          <hr id="landCardTextHr">
+          <h3>Fast feedback</h3>
+          <p>Communication with Tutors is carried out in different ways: both online and off-line. Consulting a tutor via e-mail is sometimes more efficient and faster than making a personal appointment with a professor.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+        <div class="mt-3">
+      <h2 class="font-weight-light" align="center">What is Study Helper for an instructor?</h2>
+        </div>
+    <div class="row">
+      <div class="mx-auto mt-3">
+        <div class="row">
+            <div class="col-md-4 text-sm-center"><img src="responsive.png" alt="">
+              <hr id="landCardTextHr">
+          <h3>Mobility</h3>
+          <p>Study helper offers easy access to digital editions of books to enrich and enhance your learning experience. The platform can be used online or offline on multiple devices, anytime and anywhere.</p>
+        </div>
+        <div class="col-md-4 text-sm-center"><img src="profiles.png" alt="">
+          <hr id="landCardTextHr">
+          <h3>Flexible curriculum</h3>
+          <p>A student who likes studying remotely can independently decide when and how much time during the semester  should devote to the study of the materials. Also student can build an individual training schedule up to their personal time.</p>
+        </div>
+        <div class="col-md-4 text-sm-center"><img src="opinion.png" alt="">
+          <hr id="landCardTextHr">
+          <h3>Fast feedback</h3>
+          <p>Communication with Tutors is carried out in different ways: both online and off-line. Consulting a tutor via e-mail is sometimes more efficient and faster than making a personal appointment with a professor.</p>
+        </div>
+        </div>
+      </div>
+<a href="#" class="btn btn-outline-info btn-block" id="loginButton" role="button">Become an instructor</a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <p class="col">Made with <i class="fas fa-heart"></i> for <a href="https://www.kbtu.kz/"><i class="fas fa-university"></i></a> in Almaty<p/>
+        <div class="col-6 "></div>
+      <p class="col" align="left"><a href="">About</a> | studyhelper@gmail.com</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
