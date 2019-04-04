@@ -36,9 +36,9 @@ a[role="button"]:after
   opacity: .4;*/
 }
 
-.card:hover {
+/*.card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+}*/
 
 .card .btn
 {
@@ -50,8 +50,9 @@ a[role="button"]:after
 {
   background: rgba(0, 0, 0, 0.3);
 }
-.card .btn:after
+.card .btn:active
 {
+    box-shadow: none;
     background: rgba(0, 0, 0, 0.5);
 }
 .card a
