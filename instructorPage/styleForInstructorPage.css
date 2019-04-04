@@ -3,32 +3,32 @@
   --input-padding-y: 0.75rem;
 }
 
-.login,
-.image {
-  min-height: 100vh;
-}
-
-#newInstructor {
-  display: none;
-}
 .card {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  width: 500px;
-  margin-top: 40px;
+  width: 50%;
+  margin-top: 60px;
   margin-bottom: 40px;
-/*    background-color: rgba(245, 245, 245, 1);
+  background: rgba(0, 0, 0, 0.4);
+
+}
+
+/*.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}*/
+
+body{  
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.card
+{
+/*  background-color: rgba(245, 245, 245, 1);
   opacity: .4;*/
 }
-
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.bg-image {  
-  background-color: #add8e6;
-}
-
 
 .login-heading {
   font-weight: 300;
@@ -38,7 +38,6 @@
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
   padding: 0.75rem 1rem;
-  border-radius: 2rem;
 }
 
 .form-label-group {
@@ -50,7 +49,29 @@
 .form-label-group>label {
   padding: var(--input-padding-y) var(--input-padding-x);
   height: auto;
-  border-radius: 2rem;
+}
+.form-label-group:
+{
+  box-shadow: none;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgb(216,127,119);
+  box-shadow: 0 1px 1px rgb(216,127,119) inset, 0 0 8px rgb(216,127,119);
 }
 
 .form-label-group>label {
@@ -65,8 +86,6 @@
   color: #495057;
   cursor: text;
   /* Match the input under the label */
-  border: 1px solid transparent;
-  border-radius: .25rem;
   transition: all .1s ease-in-out;
 }
 
@@ -100,4 +119,28 @@
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
   color: #777;
+}
+#newInstructor
+{
+  display: none;
+}
+
+.card .btn
+{
+  color: #d87f77;
+  border-color: #d87f77;
+  background-color: transparent;
+}
+.card .btn:hover
+{
+  background: rgba(0, 0, 0, 0.3);
+}
+.card .btn:active
+{
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+.card a
+{
+  color: #d87f77;
 }
