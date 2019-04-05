@@ -24,11 +24,6 @@ body{
   background-size: cover;
   -o-background-size: cover;
 }
-.card
-{
-/*  background-color: rgba(245, 245, 245, 1);
-  opacity: .4;*/
-}
 
 .login-heading {
   font-weight: 300;
