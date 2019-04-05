@@ -269,6 +269,15 @@ hr
 {
   color: white;
 }
+#courseName a
+{
+  border: none;
+}
+#courseName a:hover:not(.active)
+{
+  border: none;
+  text-decoration: underline;
+}
 
 img
 {
