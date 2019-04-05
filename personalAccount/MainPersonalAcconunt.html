@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Personal Account Main Page</title>
+	<title>Instuctors Personal Account Main Page</title>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,10 +23,10 @@
     <a class="navbar-brand" href="#">Study Helper</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 		 <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinko" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Courses
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinko">
           <a class="dropdown-item" href="#">ICT</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item disabled" href="#">Calculus 1</a>
@@ -48,10 +48,10 @@
 	   	<div id="withoutArrow">
 	   		<ul class="navbar-nav">
 	   			<li class="nav-item dropdown">
-	   		        <a class="btn btn-outline-info dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	   		        <a class="btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	   		          Petr Ivanov
 	   		        </a>
-	   		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	   		        <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdownMenuLink">
 	   		          <a class="dropdown-item" href="#">Some info</a>
 	   		          <a class="dropdown-item" href="#">Some info</a>
 	   		          <a class="dropdown-item" href="#">Some info</a>
@@ -67,7 +67,11 @@
   <div class="col"></div>
 	</nav>
 
-<ul class="nav nav-tabs justify-content-center mt-2" id="myTab" role="tablist">
+
+
+
+
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My courses</a>
   </li>
@@ -79,40 +83,45 @@
   </li>
 </ul>
 <div class="tab-content container" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+<div class="tab-pane fade show active list-group-flush border rounded" id="home" role="tabpanel" aria-labelledby="home-tab">
     
       
-    <ul class="list-group mt-2">
-    <li class="list-group-item"><div class="row">
-    <a href="" class="ml-4">Information Sharing</a><div class="col"></div><span class="text-muted mr-4">20 stuents use this course</span>
-  </div></li>
-
-
-  <li class="list-group-item"><div class="row">
-    <a href="personalAccountVol3.html" class="ml-4 btn btn-outline-primary">+ Add new course</a><div class="col"></div><span class="text-muted mr-4 mt-1">Some short information about this course</span>
-  </div></li>
-
- <!--  
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li> -->
+    <ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <a href="">History of Computers</a>
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <a href="">Information Sharing</a>
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+  <li class="list-group-item" id="addCourse">
+    <a href="personalAccoutnCourseEdit.html" class="btn btn-block">+ Add new course</a></li>
 </ul>
 
 
+  </div>
 
 
-
-
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    
 
 
 
 
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
 </div>
 
 
-
+<footer>
+  <div class="container">
+    <div class="row">
+      <p class="col">Made with <i class="fas fa-heart"></i> for <a href="https://www.kbtu.kz/"><i class="fas fa-university"></i></a> in Almaty<p/>
+        <div class="col-6"></div>
+      <p class="col" align="right"><a href="">About</a> | studyhelper@gmail.com</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
