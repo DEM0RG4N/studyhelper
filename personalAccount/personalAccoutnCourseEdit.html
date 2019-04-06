@@ -7,8 +7,8 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 	<script type="text/javascript" src="scriptPersonalAccount.js"></script>
-	<link rel="stylesheet" type="text/css" href="stylePersonalAccount.css">
+ 	<script type="text/javascript" src="personalAccountCourseEdit.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylePersonalAccountCourseEdit.css">
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 </head>
@@ -70,124 +70,133 @@
 
 
 
-<div class="container">
-    <div class="row">
-<div class="col-6">
-  <div class="card mt-4">
-    <div class="card-body">
-  <h5 class="card-title">Name of the course</h5>
-  <h6 class="card-subtitle mb-2 text-muted font-weight-light">There you need to choose the course form the list</h6>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<div class="input-group">
-  <select class="custom-select" id="inputGroupSelect04">
-    <option selected>Information Communication Technologies</option>
-<!--     <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
- -->  </select>
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button" id="nameOfCourseButton">Choose</button>
-  </div>
-</div>
-    </div>
-    </div>
-       </div>
-
-
-        <div class="col-6">
-          <div class="card mt-4" id="nameOfTopicCard">
-          <div class="card-body">
-                <h5 class="card-title">Name of the topic</h5>
-                <h6 class="card-subtitle mb-2 text-muted font-weight-light">There you need to choose the topic form the list</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="input-group">
-  <select class="custom-select" id="inputGroupSelect04">
-    <option selected>...</option>
-    <option value="1">History of computers</option>
-    <option value="2">Von Neumann Architecture</option>
-    <option value="3">History of Internet</option>
-    <option value="4">MS Office</option>
-    <option value="5">OS: Win, Lin</option>
-    <option value="6">Security 1</option>
-    <option value="7">Security 2</option>
-    <option value="8">Networks</option>
-    <option value="9">Information Sharing</option>
-    <option value="10">E-Commerce</option>
-    <option value="11">Cloud Services</option>
-    <option value="12">Crowd sourcing</option>
-    <option value="13">Open Source lecture</option>
-    <option value="14">Messaging</option>
-  </select>
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button" id="nameOfTopicButton">Choose</button>
-  </div>
-</div>
-          </div>
-          </div>
-        </div>
-    </div>
-
-
+<div class="section">
+  <div class="container">
+      <div class="row">
+  <div class="col-6">
     <div class="card mt-4">
-  <div class="card-body">
-    <h5 class="card-title">Content</h5>
-    <h6 class="card-subtitle mb-2 text-muted font-weight-light">There you need to make up your content of the course</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <form>
-        <div class="form-group">
-    <label for="videoInput">Video</label>
-    <input type="email" class="form-control" id="videoInput" aria-describedby="emailHelp" placeholder="https://www.youtube.com/channel/UCLEKjVxLm6Ft7_s89R6aemA">
-    <small id="emailHelp" class="form-text text-muted">Upload your course vidoe to YouTube and leave link here</small>
-  </div>
-
-<hr>
-
-<div class="mb-3"><label for="presntation">Presentation</label>
+      <div class="card-body">
+    <h5 class="card-title">Name of the course</h5>
+    <p class="card-text">Need to select one of the courses form the list that you want to teach.</p>
   <div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text">Name of chosen file</span>
-  </div>
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="presentation">
-    <label class="custom-file-label" for="presentation">Tap to choose presentation</label>
-  </div>
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Upload file</button>
-  </div>
-  </div>
-  <small id="emailHelp" class="form-text text-muted">Choose your presentation and upload it</small>
-  </div>
-
-<hr>
-
-<div class="mb-3">
-  <label for="presntation">Manual file</label>
-  <div class="input-group">
-    <div class="input-group-prepend">
-      <span class="input-group-text">Name of chosen file</span>
-    </div>
-    <div class="custom-file">
-      <input type="file" class="custom-file-input" id="presentation">
-      <label class="custom-file-label" for="presentation">Tap to choose manual file</label>
-    </div>
+    <select class="custom-select" id="inputGroupSelectCourse">
+      <option selected>...</option>
+      <option value="1">Information Communication Technologies</option>
+  <!--     <option value="2">Two</option>
+      <option value="3">Three</option> -->
+    </select>
     <div class="input-group-append">
-      <button class="btn btn-outline-secondary" type="button">Upload file</button>
+      <button class="btn" type="button" id="nameOfCourseButton">Choose</button>
     </div>
   </div>
-  <small id="emailHelp" class="form-text text-muted">Choose your manual file and upload it</small>
-</div>
-
-<hr>
-
-<form>
-  <div class="form-group">
-    <label for="additionalInformation">Some additional information</label>
-    <textarea class="form-control" id="additionalInformation" rows="3"></textarea>
+      </div>
+      </div>
+         </div>
+  
+  
+          <div class="col-6">
+            <div class="card mt-4" id="nameOfTopicCard">
+            <div class="card-body">
+                  <h5 class="card-title">Name of the topic</h5>
+                  <p class="card-text">Need to select one of the topics form the list that you want to teach.</p>
+                  <div class="input-group">
+    <select class="custom-select" id="inputGroupSelect04">
+      <option selected>...</option>
+      <option value="1">History of computers</option>
+      <option value="2">Von Neumann Architecture</option>
+      <option value="3">History of Internet</option>
+      <option value="4">MS Office</option>
+      <option value="5">OS: Win, Lin</option>
+      <option value="6">Security 1</option>
+      <option value="7">Security 2</option>
+      <option value="8">Networks</option>
+      <option value="9">Information Sharing</option>
+      <option value="10">E-Commerce</option>
+      <option value="11">Cloud Services</option>
+      <option value="12">Crowd sourcing</option>
+      <option value="13">Open Source lecture</option>
+      <option value="14">Messaging</option>
+    </select>
+    <div class="input-group-append">
+      <button class="btn" type="button" id="nameOfTopicButton">Choose</button>
+    </div>
   </div>
-</form>
-  <a href="MainPersonalAcconunt.html" class="btn btn-outline-success mt-4 btn-block">Submit</a>
-    </form>
+            </div>
+            </div>
+          </div>
+      </div>
+  
+  
+      <div class="card mt-4 mb-4" id="ContetnOfTopicCard">
+    <div class="card-body">
+      <h5 class="card-title">Content</h5>
+      <p class="card-text">There you need to make main content of your lesson. Before you will start make sure that you have already uploaded your tutorial video to YouTube.</p>
+      <form>
+          <div class="form-group">
+      <label for="videoInput">Video</label>
+      <input type="text" class="form-control" id="videoInput" aria-describedby="emailHelp" placeholder="https://www.youtube.com/channel/UCLEKjVxLm6Ft7_s89R6aemA">
+      <small id="emailHelp" class="form-text text-muted">Upload your course vidoe to YouTube and leave link here</small>
+    </div>
+  
+  <hr>
+  
+  <!--             <div class="mb-3"><label for="presntation">Additional files</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="fileBrowser" readonly>
+                  <label class="input-group-btn">
+                      <button class="btn">
+                          Browse <input type="file" style="display: none;" multiple>
+                      </button>
+                  </label>
+              </div>
+    <small id="emailHelp" class="form-text text-muted">Choose your manual files or presentations and upload it</small>
+    </div> -->
+    <div class="mb-3">
+    <label for="presntation">Additional files</label>
+    <div class="input-group">
+    <input type="text" class="form-control" readonly id="fileBrowser" placeholder="There is your list of additional files">
+    <div class="input-group-append">
+      <label class="input-group-btn">
+      <span class="btn">
+        Browse<input type="file" style="display: none;" multiple>
+      </span>
+      </label>
+    </div>
   </div>
+  <small id="emailHelp" class="form-text text-muted">Click on "Browse" button and select your additional DOCS and PowerPoint Presentations</small>
+  </div>
+  
+  
+  <!-- <div class="mb-3">
+    <label for="presntation">Manual file</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Name of chosen file</span>
+      </div>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="presentation">
+        <label class="custom-file-label" for="presentation">Tap to choose manual file</label>
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Upload file</button>
+      </div>
+    </div>
+    <small id="emailHelp" class="form-text text-muted">Choose your manual file and upload it</small>
+  </div> -->
+  
+  <hr>
+  
+  <form>
+    <div class="form-group">
+      <label for="additionalInformation">Description of the topic</label>
+      <textarea class="form-control" id="additionalInformation" rows="3"></textarea>
+    </div>
+    <small id="emailHelp" class="form-text text-muted">There you should briefly describe the main idea of the topic</small>
+  </form>
+    <a href="MainPersonalAcconunt.html" class="btn mt-4 btn-block">Submit</a>
+      </form>
+    </div>
+    </div>
   </div>
 </div>
 <!--
@@ -323,5 +332,15 @@
         </div>
     </div>
 -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <p class="col">Made with <i class="fas fa-heart"></i> for <a href="https://www.kbtu.kz/"><i class="fas fa-university"></i></a> in Almaty<p/>
+        <div class="col-6"></div>
+      <p class="col" align="right"><a href="">About</a> | studyhelper@gmail.com</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
