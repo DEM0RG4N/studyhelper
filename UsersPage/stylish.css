@@ -2,7 +2,24 @@
   --input-padding-x: 1.5rem;
   --input-padding-y: 0.75rem;
 }
+.navbar-brand
+{ 
+position: relative;
+margin-top: 0;
+margin-bottom: 0;
+}
+.navbar #navbarDropdownMenuLink,
+.navbar #becomeAnInstructor
+{
+  font-size: 18px;
+  border: none;
+}
 
+.navbar #navbarDropdownMenuLink:hover,
+.navbar #becomeAnInstructor:hover
+{
+  border: show;
+}
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -213,8 +230,12 @@ a[role="button"]:after
   width: 100%;
 }
 #section {
-  height: 86vh;
-  background-image: url("minimalistMountainsMainPageSection1.png");
+  height: 80vh;
+  background: url("minimalistMountainsMainPageSection1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; 
 }
 #section2 {
   height: 140vh;
@@ -252,14 +273,18 @@ td a
 #landText
 {
   font-size: 20px;
+  left: 80px;
 }
 #landCardText
 {
   font-size: 18px;
 }
-hr
+#landText a
 {
-  margin-left: -30px;
+  color: black;
+}
+hr
+{left: 20px;
 }
 #landCardTextHr
 {
