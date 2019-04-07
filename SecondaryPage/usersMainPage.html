@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
@@ -37,7 +38,7 @@
         </div>
       </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Become an instructor</a>
+          <a class="nav-link" href="../instructorPage/instructorLogInSignUp.html">Become an instructor</a>
         </li>
     </ul>
                 <form class="form-inline">
@@ -120,7 +121,7 @@
 
 
                         <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> <!-- Begining of General Info -->
+                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> <!-- Begining of General Info -->
                         <div class="card mb-3 mx-auto bg-dark border-light" id="generalInformationCard">
                         <img src="minimalistMountains_2.jpg" class="card-img-top" alt="">
                         <div class="card-body">
@@ -162,9 +163,77 @@
 
 
 
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                             <!-- begining of comments -->
-                            
+                        <div class="row mt-3">
+                            <div class="col-8 ml-3">
+                                <div class="card">
+                                  <h5 class="card-header text-center">Question & Answer</h5>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Переходи от вопросов к пониманию.</h5>
+                                    <p class="card-text">Тут ты сможешь найти ответы на всевозможные вопросы по данной теме. Так же, у тебя есть возможность поиомь другим таким же студентам, как и ты.</p>
+                                    <a href="" class="btn btn-info btn-block">Ask a question</a>
+                                  </div>
+                                </div>
+
+
+            <div class="card mt-3" id="studentsQuestions">
+              <div class="card-body">
+                <div class="row">
+                    <h6 class="card-subtitle mb-2 text-muted col">Assel Bersinbayeva</h6>
+                    <h6 class="card-subtitle mb-2 text-muted col-3 text-right">2 minutes ago</h6>
+                </div>
+                <a href="">Помогите с решением задачи, как сделать это и то?</a>
+
+                <!-- Attachments and answers field;
+                button to answer -->
+                <div class="row">
+                    <div class="col-9 mt-2">
+                        <i class="fas fa-paperclip mt-1"></i><span> 1</span>
+
+                    </div>
+                    <a class="btn btn-outline-secondary col-3">Give an answer</a>
+                </div>
+                <hr>
+                <div class="row">
+                    <h6 class="card-subtitle mb-2 text-muted col">Assan Bekkaliyev</h6>
+                    <h6 class="card-subtitle mb-2 text-muted col-3 text-right">5 minutes ago</h6>
+                </div>
+                <a href="">Не могу понять как решать это задание в закрепе.</a>
+
+                <!-- Attachments and answers field;
+                button to answer -->
+                <div class="row">
+                    <div class="col-9 mt-2">
+                        <i class="fas fa-paperclip mt-1"></i><span> 2</span>
+
+                    </div>
+                    <a class="btn btn-outline-secondary col-3">Give an answer</a>
+                </div>
+              </div>
+            </div>
+
+                            </div>
+
+                            <!-- second col -->
+                            <div class="col mr-3">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-crown"></i> Best in History of Computers</h5>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Argun Surname
+                                        <span class="badge">2 <i class="fas fa-star"></i></span>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Vladimir Popov
+                                        <span class="badge"> <i class="fas fa-star"></i></span>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+
                             <!-- end of comments -->
                         </div>
                     </div>
@@ -174,4 +243,14 @@
     </div>
 </body>
 
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <p class="col">Made with <i class="fas fa-heart"></i> for <a href="https://www.kbtu.kz/"><i class="fas fa-university"></i></a> in Almaty<p/>
+        <div class="col-6"></div>
+      <p class="col" align="right"><a href="">About</a> | studyhelper@gmail.com</p>
+    </div>
+  </div>
+</footer>
 </html>
