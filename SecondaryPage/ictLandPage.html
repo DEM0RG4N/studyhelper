@@ -22,15 +22,13 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="col"></div>
-    <div class="collapse navbar-collapse col-10" id="navbarTogglerDemo01">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <a class="navbar-brand" href="#">
     <img src="logo.png" id="logo">
     StudyHelper</a>
-    <ul class="navbar-nav mr-auto mx-auto">
-    <li class="nav-item">
-    <a class="nav-link" id="becomeAnInstructor" href="../instructorPage/instructorLogInSignUp.html">Become an instructor</a>
-    </li>      
+    <div class="col-6"></div>
+    <ul class="navbar-nav">
+     
          <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Courses
@@ -44,13 +42,15 @@
           <a class="dropdown-item disabled" href="#">PP 1</a>
         </div>
       </li>
+          <li class="nav-item">
+    <a class="nav-link mr-3" id="becomeAnInstructor" href="../instructorPage/instructorLogInSignUp.html">Become an instructor</a>
+    </li> 
       </ul>
         <form class="form-inline">
-        <button type="button" class="btn btn-outline-info" id="loginButton">Log In</button>
+        <button type="button" class="btn btn-outline-info mr-1" id="loginButton">Log In</button>
         <button type="button" class="btn btn-info" id="signupButton">Sing Up</button>
         </form> 
     </div> 
-    <div class="col"></div>
 </nav>
 
 <div id="secondNavBar">
@@ -80,10 +80,86 @@
     </nav>
 <!-- Page Content  -->
 <div id="content">
-    <div class="container mt-3">
+    <div class="container mt-2">
         <div class="text-center"><h1>What is ICT?</h1></div>
         <div class="text-center"><h2 class="font-weight-light">Information and communications technology (ICT) refers to all the technology used to handle telecommunications, broadcast media, intelligent building management systems, audiovisual processing and transmission systems, and network-based control and monitoring functions.</h2></div>
-        <a href="#blockquote" class="btn btn-outline-info btn-block">Learn more</a>
+        <a href="#blockquote" class="btn btn-block mb-3" id="learnMore">Learn more</a>
+
+        <hr>
+        <h2 class="text-center font-weight-light mt-3">Choose your own Instructor for this course</h2>
+
+        <div id="InstructorList">
+            <div class="row">
+            <div class="card mt-2">
+              <div class="card-body">
+                <div align="center">
+                    <img  class="instructorImg" src="..\usersPage\minimalistMountainsMainPageSection1.jpg" alt="">
+                </div>
+                <h3 class="card-title text-center">Assan Bekkaliyev</h3>
+                <hr>
+                    <h6 class="card-subtitle text-muted">Freshman</h6>
+                    <div class="col"></div>
+                    <div class="rateOfInstructorCard">
+                    <h6>4,5 <i class="fas fa-star"></i></h6>              
+                    </div>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab recusandae laudantium quidem aut obcaecati rem. Ipsum, consectetur, debitis eius vitae eligendi optio nesciunt, enim quibusdam temporibus, nisi vero iure laborum.</p>
+                <a href="#" class="card-link btn btn-block">Try free lesson</a>
+              </div>
+            </div> 
+
+            <div class="card mt-2 mx-auto">
+              <div class="card-body">
+                <div align="center">
+                    <img  class="instructorImg" src="..\usersPage\minimalistMountainsMainPageSection1.jpg" alt="">
+                </div>
+                <h3 class="card-title text-center">Petr Ivanov</h3>
+                <hr>
+                <h6 class="card-subtitle text-muted">Sophermore</h6>
+                    <div class="col"></div>
+                    <div class="rateOfInstructorCard">
+                    <h6>4,3 <i class="fas fa-star"></i></h6>              
+                    </div>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde alias fuga tenetur ad saepe laudantium modi id nostrum sit commodi ab, quaerat minus libero, vitae officia non et eos officiis!</p>
+                <a href="#" class="card-link btn btn-block">Try free lesson</a>
+              </div>
+            </div> 
+
+            <div class="card mt-2">
+              <div class="card-body">
+                <div align="center">
+                    <img  class="instructorImg" src="..\usersPage\minimalistMountainsMainPageSection1.jpg" alt="">
+                </div>  
+                <h3 class="card-title text-center">Max Maxatov</h3>
+                <hr>
+                <h6 class="card-subtitle text-muted">Sophermore</h6>
+                    <div class="col"></div>
+                    <div class="rateOfInstructorCard">
+                    <h6>4,2 <i class="fas fa-star"></i></h6>              
+                    </div>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eos repellat recusandae eveniet alias eum itaque, saepe quibusdam eaque, dolorem aspernatur commodi rem. Molestias quibusdam dignissimos sit, a labore iste!</p>
+                <a href="#" class="card-link btn btn-block">Try free lesson</a>
+              </div>
+            </div>  
+            </div>
+        </div>
+    
+</div>
+
+
+    </div>
+</div> <!-- this is fuckin contetn div -->
+
+        </div>
+    </div>
+<div class="card mt-3 mb-3" id="blockquote">
+    <blockquote class="blockquote text-right mr-3">
+          <div class="row">
+                <div class="col"></div>
+              <p class="mb-0 col-7">We can not teach our kids to compete with machines. They are smarter. We have to teach something unique that machine can never catch up with us.</p>
+          </div>
+          <span class="blockquote-footer font-weight-bold">Jack Ma <cite title="Source Title" class="font-weight-normal">Co-founder of Alibaba Group.</cite></span>
+        </blockquote>
+</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -148,24 +224,6 @@
     </div>
   </div>
 </div>
-    
-</div>
-
-
-    </div>
-</div> <!-- this is fuckin contetn div -->
-
-        </div>
-    </div>
-<div class="card mt-3 mb-3" id="blockquote">
-    <blockquote class="blockquote text-right mr-3">
-          <div class="row">
-                <div class="col"></div>
-              <p class="mb-0 col-7">We can not teach our kids to compete with machines. They are smarter. We have to teach something unique that machine can never catch up with us.</p>
-          </div>
-          <span class="blockquote-footer font-weight-bold">Jack Ma <cite title="Source Title" class="font-weight-normal">Co-founder of Alibaba Group.</cite></span>
-        </blockquote>
-</div>
 
 
        
@@ -179,23 +237,19 @@
         <img src="static/computer1.png" alt="" class="imgForPresentation">
         <p class="textForPresentationRight col">ICT allows students to develop their ability to learn new software quickly and efficiently. This is an extremely useful and desirable skill which will make young people more adaptable and versatile students.</p>
     </div>
-    <hr>
-    <div class="row presentation">
+    <div class="row presentation mt-3">
         <p class="textForPresentationLeft col">ICT teaches to be safe on the internet. Now that so many online communities are blossoming people active on the internet, it is vital that students are informed about the risks associated with the internet. ICT is about being sensible, safe and responsible when using the internet.</p>
         <img src="static/sharing.png" alt="" class="imgForPresentation">
     </div>
-    <hr>
-    <div class="row presentation">
+    <div class="row presentation mt-3">
         <img src="static/talk.png" alt="" class="imgForPresentation">
         <p class="textForPresentationRight col">ICT involves a lot of independent problem solving. Problem solving is a transferrable skill which will prevent the people from being daunted by technical problems in various areas of their lives. In ICT students are provided with a safe environment to make their own errors.</p>
     </div>
-    <hr>
-    <div class="row presentation">
+    <div class="row presentation mt-3">
         <p class="textForPresentationLeft col">ICT is used in a variety of other subjects from Mathematics to Art, so being able to navigate computers and programs confidently will be useful to students in nearly any subject they decide to pursue. They will be able to concentrate on the task in question, without struggling with the software they are expected to use for it.</p>
         <img src="static/human-brain.png" alt="" class="imgForPresentation">
     </div>
-    <hr>
-    <div class="presentation row">
+    <div class="presentation row mt-3">
         <img src="static/project.png" alt="" class="imgForPresentation">
         <p class="textForPresentationRight col">A variety of job opportunities rely on a candidate’s ICT abilities. It increases chance of a career, schools must be teaching ICT or risk them getting left behind. In a world where most of people are extremely confident on computers, it is crucial that student knows computer basic programs and search engines.</p>
     </div>
@@ -204,10 +258,10 @@
 
     <div class="card mt-3" id="sideBarCard">
       <div class="card-body">
-        <h3 class="card-title text-center">Get started</h3>
+        <h3 class="card-title text-center text-white">Let's start here</h3>
         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link btn btn-info btn-block">Let's get started</a>
+        <a href="#" class="card-link btn btn-block">Tap to go and choose your Instructor</a>
       </div>
     </div>  
 <div class="prefooter">

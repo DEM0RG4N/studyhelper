@@ -1,8 +1,8 @@
 .navbar-brand
 { 
 position: relative;
-margin-top: 0;
-margin-bottom: 0;
+margin-top:0;
+font-size: 25px;
 }
 .navbar #navbarDropdownMenuLink,
 .navbar #becomeAnInstructor
@@ -18,6 +18,7 @@ margin-bottom: 0;
 {
     height: 250px;
     width: 250px;
+    margin-top: 10px;
 }
 .carousel-caption h1
 {
@@ -60,7 +61,8 @@ a[role="button"]:after
 }
 img
 {
-  width: 70px;
+  width: 40px;
+  margin-top: -5px;
 }
 .prefooter
 {
@@ -135,6 +137,7 @@ body
     background: #343a40;
     color: #fff;
     border-radius: 0 0 0 0;
+    font-size: 18px;
 }
 
 #secondNavBar #sidebar .sidebar-header {
@@ -285,4 +288,42 @@ footer a:hover
 .presentation
 {
     opacity: 0;
+}
+
+#learnMore,
+#InstructorList .btn,
+#sideBarCard .btn
+{
+    background-color: #8C6B56;
+    border-color: #4D3C2B;
+    color: #4D3C2B;
+}
+#learnMore:hover,
+#learnMore:focus,
+#sideBarCard .btn:hover,
+#sideBarCard .btn:focus,
+#InstructorList .btn:hover,
+#InstructorList .btn:focus
+{
+    background-color: #735D51;
+    box-shadow: none;
+    color: #fff;
+}
+#InstructorList .card
+{
+    width: 350px;
+}
+#sideBarCard
+{
+    background: #343a40;
+}
+.instructorImg
+{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+.fa-star
+{
+    color: #fbbe2e;
 }
