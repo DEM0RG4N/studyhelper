@@ -1,3 +1,32 @@
+nav
+{
+    /*background: rgba(0, 0, 0, 0);*/
+}
+
+#loginButton
+{
+    border-color: #CFE7FF;
+    background: rgba(0, 0, 0, 0);
+    color: #CFE7FF;
+}
+#loginButton:hover
+{
+    border-color: #CFE7FF;
+    background: #CFE7FF; 
+    color: #343a40;  
+}
+#signupButton:hover
+{
+    border-color: #CFE7FF;
+    background: #CFE7FF; 
+    color: #343a40;
+}
+#signupButton
+{
+    border-color: #CFE7FF;
+    background: rgba(0, 0, 0, 0);
+    color: #CFE7FF; 
+}
 .navbar-brand
 { 
 position: relative;
@@ -313,9 +342,9 @@ footer a:hover
 {
     width: 350px;
 }
-#sideBarCard
+#sideBarCard p
 {
-    background: #343a40;
+    font-size: 25px;
 }
 .instructorImg
 {
@@ -327,3 +356,4 @@ footer a:hover
 {
     color: #fbbe2e;
 }
+

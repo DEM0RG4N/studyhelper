@@ -9,6 +9,15 @@ $(document).ready(function() {
         scrollTop: position
     },1000);
 });
+    $("a[href^='#InstructorList']").click(function(e) {
+    e.preventDefault();
+    
+    var position = $($(this).attr("href")).offset().top - 63;
+
+    $("body, html").animate({
+        scrollTop: position
+    },1000);
+});
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
     
@@ -19,7 +28,7 @@ $(document).ready(function() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+            if( bottom_of_window > bottom_of_object - 150){
                 
                 $(this).animate({'opacity':'1'},400);
                     
