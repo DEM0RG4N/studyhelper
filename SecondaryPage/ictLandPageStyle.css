@@ -2,12 +2,35 @@ nav
 {
     /*background: rgba(0, 0, 0, 0);*/
 }
-
+#userButton
+{
+    border-color: #CFE7FF;
+    background: rgba(0, 0, 0, 0);
+    color: #CFE7FF;  
+}
+#userButton:hover
+{
+    border-color: #CFE7FF;
+    background: #CFE7FF; 
+    color: #343a40;  
+}
+#userButtonList
+{
+  margin-left: 15px;
+}
 #loginButton
 {
     border-color: #CFE7FF;
     background: rgba(0, 0, 0, 0);
     color: #CFE7FF;
+    display: none;
+}
+#userButton:focus
+{
+  box-shadow: none;
+  border-color: #CFE7FF;
+    background: #CFE7FF; 
+    color: #343a40; 
 }
 #loginButton:hover
 {
@@ -23,6 +46,7 @@ nav
 }
 #signupButton
 {
+  display: none;
     border-color: #CFE7FF;
     background: rgba(0, 0, 0, 0);
     color: #CFE7FF; 
