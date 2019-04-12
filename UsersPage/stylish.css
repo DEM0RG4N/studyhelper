@@ -231,7 +231,7 @@ a[role="button"]:after
   width: 100%;
 }
 #section {
-  height: 80vh;
+  height: 85vh;
   background: url("minimalistMountainsMainPageSection1.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -305,9 +305,41 @@ hr
   text-decoration: underline;
 }
 
-img
+#logo
 {
-  width: 70px;
+  width: 40px;
+  margin-top: -5px;
+}
+
+#loginButton
+{
+    border-color: #17a2b8;
+    background: rgba(0, 0, 0, 0);
+    color: #17a2b8;
+}
+#loginButton:hover
+{
+    border-color: #17a2b8;
+    background: #17a2b8; 
+    color: #343a40;  
+}
+#signupButton:hover
+{
+    border-color: #17a2b8;
+    background: #17a2b8; 
+    color: #343a40;
+}
+#signupButton
+{
+    border-color: #17a2b8;
+    background: rgba(0, 0, 0, 0);
+    color: #17a2b8; 
+}
+.navbar-brand
+{ 
+position: relative;
+margin-top:0;
+font-size: 25px;
 }
 
 footer
@@ -325,4 +357,8 @@ footer a
   margin-bottom: 0;
   padding-bottom: 0;
   text-decoration: none;
+}
+img
+{
+  width: 210px;
 }

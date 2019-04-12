@@ -13,20 +13,18 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">	    	
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">         
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-  <div class="col"></div>
-  <div class="collapse navbar-collapse col-10" id="navbarTogglerDemo01">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <a class="navbar-brand" href="#">
     <img src="logo.png" id="logo">
     StudyHelper</a>
-    <ul class="navbar-nav mr-auto mx-auto">
-    <li class="nav-item">
-      <a class="nav-link" id="becomeAnInstructor" href="../instructorPage/instructorLogInSignUp.html">Become an instructor</a>
-    </li>      
-		 <li class="nav-item dropdown">
+    <div class="col-6"></div>
+    <ul class="navbar-nav">
+     
+         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Courses
         </a>
@@ -39,14 +37,16 @@
           <a class="dropdown-item disabled" href="#">PP 1</a>
         </div>
       </li>
+          <li class="nav-item">
+    <a class="nav-link mr-3" id="becomeAnInstructor" href="../instructorPage/instructorLogInSignUp.html">Become an instructor</a>
+    </li> 
       </ul>
-	    <form class="form-inline">
-        <button type="button" class="btn btn-outline-info" id="loginButton">Log In</button>
+        <form class="form-inline">
+        <button type="button" class="btn mr-1" id="loginButton">Log In</button>
         <button type="button" class="btn btn-info" id="signupButton">Sing Up</button>
-	    </form>	
-  </div> 
-  <div class="col"></div>
-	</nav>
+        </form> 
+    </div> 
+</nav>
 
 <div id="section">
 <div class="container" id="loginCard">
@@ -372,35 +372,7 @@
   </div>
 </section>
 
-<section>
-  <div class="container">
-        <div class="mt-3">
-      <h2 class="font-weight-light" align="center">What is Study Helper for an instructor?</h2>
-        </div>
-    <div class="row">
-      <div class="mx-auto mt-3">
-        <div class="row">
-            <div class="col-md-4 text-sm-center"><img src="responsive.png" alt="">
-              <hr id="landCardTextHr">
-          <h3>Mobility</h3>
-          <p>Study helper offers easy access to digital editions of books to enrich and enhance your learning experience. The platform can be used online or offline on multiple devices, anytime and anywhere.</p>
-        </div>
-        <div class="col-md-4 text-sm-center"><img src="profiles.png" alt="">
-          <hr id="landCardTextHr">
-          <h3>Flexible curriculum</h3>
-          <p>A student who likes studying remotely can independently decide when and how much time during the semester  should devote to the study of the materials. Also student can build an individual training schedule up to their personal time.</p>
-        </div>
-        <div class="col-md-4 text-sm-center"><img src="opinion.png" alt="">
-          <hr id="landCardTextHr">
-          <h3>Fast feedback</h3>
-          <p>Communication with Tutors is carried out in different ways: both online and off-line. Consulting a tutor via e-mail is sometimes more efficient and faster than making a personal appointment with a professor.</p>
-        </div>
-        </div>
-      </div>
-<a href="../instructorPage/instructorLogInSignUp.html" class="btn btn-outline-info btn-block" id="loginButton" role="button">Become an instructor</a>
-    </div>
-  </div>
-</section>
+
 
 
 
