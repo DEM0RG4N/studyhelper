@@ -2,7 +2,10 @@
   --input-padding-x: 1.5rem;
   --input-padding-y: 0.75rem;
 }
-
+.none
+{
+  display: none;
+}
 .card:not(#landCard) {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -23,7 +26,7 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }*/
 
-body{  
+.container-fluid{  
   background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -157,4 +160,58 @@ img
 #landCardContent
 {
   margin-top: 40px;
+}
+
+/*prelodaer*/
+.loaderBox
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 100px;
+  bottom: 110px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+.loadeAnim2,
+.loadeAnim3,
+.loadedSpan{
+    position: absolute;
+    border-radius: 100%;
+    border: 10px solid transparent;
+}
+
+.loadeAnim2{
+    width: 110px;
+    height: 110px;
+    border-top: 10px solid #3591d8;
+    border-bottom: 10px solid #d3b344;
+    top: 45px;
+    left: 45px;
+    animation: leftToRight 2s linear infinite;
+}
+.loadedSpan
+{
+    font-size: 66px;
+    top: 37px;
+    left: 50px;
+}
+.loadeAnim3 {
+    width: 110px;
+    height: 110px;
+    border-right: 10px solid #ad5677;
+    border-left: 10px solid #349e30;
+    top: 45px;
+    left: 45px;
+    animation: topToBottom 3s linear infinite;
+}
+@keyframes leftToRight {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes topToBottom {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
 }
