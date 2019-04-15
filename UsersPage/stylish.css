@@ -12,6 +12,7 @@ margin-bottom: 0;
 .navbar #becomeAnInstructor
 {
   font-size: 18px;
+  color: white;
   
 }
 
@@ -239,7 +240,16 @@ a[role="button"]:after
   -o-background-size: cover; 
 }
 #section2 {
-  height: 140vh;
+  height: 100vh;
+}
+#transparent
+{
+    background: url("minimalistMountainsMainPageSection1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; 
+  height: 40vh;
 }
 table
 {
@@ -291,7 +301,7 @@ hr
 {
   margin-left: 0px;
 }
-#courseName a:not(.active)
+#courseName a:not(.active):not(.disabled)
 {
   color: white;
 }
@@ -361,4 +371,11 @@ footer a
 img
 {
   width: 210px;
+}
+
+.disabled,
+.disabled:hover
+{
+  color: grey;
+  pointer-events: none;
 }

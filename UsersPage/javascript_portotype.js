@@ -69,4 +69,24 @@ $(document).ready(function() {
 		statusForLogin = true;
 		$("#searchTab").hide();
 	});
+
+	$("a[href^='#benefits']").click(function(e) {
+    e.preventDefault();
+    
+    var position = $($(this).attr("href")).offset().top;
+
+    $("body, html").animate({
+        scrollTop: position
+    },1000);
+});
+
+	$("a[href^='#courseName']").click(function(e) {
+    e.preventDefault();
+    
+    var position = $($(this).attr("href")).offset().top;
+
+    $("body, html").animate({
+        scrollTop: position
+    },1000);
+});
 }); 
