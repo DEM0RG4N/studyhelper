@@ -1,4 +1,18 @@
 $(document).ready(function() {
+
+    // preloaderStarts
+    $(window).on("load", function() {
+    preloaderFadeOutTime = 1200;
+    function hidePreloader() {
+    var preloader = $('.loaderBox');
+    setTimeout(function(){
+        $('.mainContent').removeClass('none');
+        preloader.hide();
+    }, 1200);
+    }
+    hidePreloader();
+    });
+    // preloaderEnds
     
     $("a[href^='#blockquote']").click(function(e) {
     e.preventDefault();

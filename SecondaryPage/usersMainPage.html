@@ -14,42 +14,60 @@
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script
+    >
+    <script src="scndjava.js" defer></script>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">           
-  <div class="col"></div>
-  <div class="collapse navbar-collapse col-10" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="C:/Users/Fora/Desktop/html/StudyHelper/UsersPage/initiall_page.html">Study Helper</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Courses
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">ICT</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="#">Calculus 1</a>
-          <a class="dropdown-item disabled" href="#">Linear Algebra</a>
-          <a class="dropdown-item disabled" href="#">Discrete Structures</a>
-          <a class="dropdown-item disabled" href="#">PP 1</a>
-        </div>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../instructorPage/instructorLogInSignUp.html">Become an instructor</a>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">         
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand ml-2" href="#">
+      <img src="logo.png" id="logo">
+      StudyHelper</a>
+      <div class="col"></div>
+      <ul class="navbar-nav">
+       
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="">ICT</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item disabled" href="#">Calculus 1</a>
+            <a class="dropdown-item disabled" href="#">Linear Algebra</a>
+            <a class="dropdown-item disabled" href="#">Discrete Structures</a>
+            <a class="dropdown-item disabled" href="#">PP 1</a>
+          </div>
         </li>
-    </ul>
-                <form class="form-inline">
-                    <div>
-                    <a href="#" class="btn btn-outline-info my-2 my-sm-0" id="loginButton" role="button">Log in</a>
-                    <a href="#" class="btn btn-outline-info my-2 my-sm-0 active" id="signupButton" role="button">Sign up</a>
-                    </div>
-                    </form> 
-  </div> 
-  <div class="col"></div>
-    </nav>
+            <li class="nav-item">
+      <a class="nav-link" id="becomeAnInstructor" href="../instructorPage/instructorLogInSignUp.html">Become an instructor</a>
+      </li> 
+        </ul>
+          <form class="form-inline">
+          <button type="button" class="btn mr-1" id="loginButton">Log In</button>
+          <button type="button" class="btn btn-info" id="signupButton">Sing Up</button>
+  
+  <div class="dropdown col">
+    <button class="btn" type="button" id="userButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+    </button>
+    <div class="dropdown-menu" aria-labelledby="userButton" id="userButtonList">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <hr>
+      <a class="dropdown-item" href="#">Log Out</a>
+    </div>
+  </div>
+          </form> 
+      </div> 
+  </nav>
+
 
 
     <div id="secondNavBar">
@@ -62,7 +80,7 @@
         
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#" class="active">History of computers</a>
+                        <a href="#">History of computers</a>
                         <a href="#">Von Neumann Architecture</a>
                         <a href="#">History of Internet</a>
                         <a href="#">MS Office</a>
@@ -87,7 +105,7 @@
                     <iframe width="854" height="480" src="https://www.youtube.com/embed/mFYZnMjUinc" frameborder="0" allow="accelerometer;" allowfullscreen></iframe>
                 </div>   
                     
-                    <h2 class="text-center mt-3">Topic of the lesson</h2>
+                    <h2 class="text-center mt-3 lessonTopic"></h2>
 <!--                     <div class="line"></div>
                     <p class="text-center">Short info about the lesson. Created by <a href="#" class="instrustorsPage">Ivan Petrov</a></p>
                     <div class="line"></div> -->
@@ -112,16 +130,18 @@
                               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">General information</a>
 
-                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Attached files</a>
+                               
 
                                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Q&A</a>
+
+                                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Recomended content</a>
                               </div>
                             </nav>
 
 
 
                         <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> <!-- Begining of General Info -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> <!-- Begining of General Info -->
                         <div class="card mb-3 mx-auto bg-dark border-light" id="generalInformationCard">
                         <img src="minimalistMountains_2.jpg" class="card-img-top" alt="">
                         <div class="card-body">
@@ -129,21 +149,16 @@
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nulla laborum maiores, voluptatibus quibusdam autem! Omnis delectus repudiandae explicabo modi beatae accusantium sit, earum dicta maxime voluptatum tempora harum voluptate?.</p>
                             <p class="card-text"><small class="text-muted">Another info</small></p>
                         </div>
-                        </div>                             
-                    <!-- End of General Info -->
-                    </div>
-                          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                              
-                            <div class="card bg-dark mx-auto border-light" id="attachedFilesCard">
-                                  <!-- <img src="minimalistMountains.jpg" class="card-img-top" alt="minimalist mountains"> -->
-                                  
+
+                        </div>    
+                        <div class="card bg-dark mx-auto border-light" id="attachedFilesCard">
 
                                     <div class="row no-gutters">
                                         <div class="col-md-4">
                                           <img src="minimalistMountains.jpg" class="card-img" alt="...">
                                         </div>
                                         <div class="col-md-8">
-                                            <div class="card-body ">
+                                            <div class="card-body border-light">
                                     <h5 class="card-title text-white">List of attached files</h5>
                                     <p class="card-text">There you are able to download some useful document for deep learning. And some more information about documentation.</p>
                                   </div>
@@ -154,7 +169,13 @@
                                   </ul>
                                         </div>
                                       </div>
-                                    </div>
+                                    </div>  
+
+                    <!-- End of General Info -->
+                    </div>
+                          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                              
+                            <!-- there should be a list of recomended video files -->
                           </div>
 
 
@@ -163,7 +184,7 @@
 
 
 
-                        <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                             <!-- begining of comments -->
                         <div class="row mt-3">
                             <div class="col-8 ml-3">
