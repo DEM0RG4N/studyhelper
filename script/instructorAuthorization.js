@@ -12,7 +12,7 @@ $(document).ready(function() {
 	$(window).on("load", function() {
 	preloaderFadeOutTime = 1200;
 	function hidePreloader() {
-	var preloader = $('.loaderBox');
+	var preloader = $('.loader');
 	setTimeout(function(){
         $('.container-fluid').removeClass('none');
         preloader.hide();

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -13,42 +13,48 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md">         
+<nav class="navbar navbar-expand-md fixed-top" id="navigation-bar">         
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
- <ul class="navbar-nav">
-     
-         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Courses
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="..\secondaryPage\ictLandPage.html">ICT</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="#">Calculus 1</a>
-          <a class="dropdown-item disabled" href="#">Linear Algebra</a>
-          <a class="dropdown-item disabled" href="#">Discrete Structures</a>
-          <a class="dropdown-item disabled" href="#">PP 1</a>
+<div class="col-5">
+          <ul class="navbar-nav">
+              
+                  
+                   <li class="nav-item">
+             <a class="nav-link mr-1 btn" id="becomeAnInstructor" href="pages/instructorAuthorization.html">Станьте преподавателем</a>
+             </li>
+
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Курсы
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <a class="dropdown-item" href="..\secondaryPage\ictLandPage.html">ICT</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item disabled" href="#">Calculus 1</a>
+                   <a class="dropdown-item disabled" href="#">Linear Algebra</a>
+                   <a class="dropdown-item disabled" href="#">Discrete Structures</a>
+                   <a class="dropdown-item disabled" href="#">PP 1</a>
+                 </div>
+               </li> 
+               </ul>
+        </div>        
+        <div class="col">
+          <a class="navbar-brand mx-auto" href="#">
+              <img src="images/logo.png" id="logo"></a>
         </div>
-      </li>
-          <li class="nav-item">
-    <a class="nav-link mr-3" id="becomeAnInstructor" href="pages/instructorAuthorization.html">Become an instructor</a>
-    </li> 
-      </ul>
-      <div class="col"></div>
-        <a class="navbar-brand" href="#">
-    <img src="images/logo.png" id="logo"></a>
-        <div class="col"></div>
 
    
-        <form class="form-inline">
-        <button type="button" class="btn mr-1" id="loginButton">Log In</button>
-        <button type="button" class="btn btn-info" id="signupButton">Sing Up</button>
-        </form> 
-    </div> 
-</nav>
+        <div class="col-auto">
+          <form class="form-inline">
+          <button type="button" class="btn mr-1" id="loginButton">Войти</button>
+          <button type="button" class="btn btn-info" id="signupButton">Зарегистрироваться</button>
+          </form>
+        </div>
+    </div>
+  </nav>
 
 <div id="section">
 <div class="container" id="loginCard">
@@ -132,17 +138,39 @@
 </div>
 </div>
 </div>
-<div class="searchForm container" align="right" id="searchTab">
+<!-- <div class="searchForm container" align="right" id="searchTab">
   <h1 class="ml-3">Problems with studying?</h1>
   <hr class="col-5" align="right">
   <p class="col-6 text-left" id="landText">Study Helper assistant will help you. We aren’t a traditional university and here’s why you should join to us. <a href="#benefits">Learn more</a></p>
+</div> -->
+
 </div>
+<div class="landing-page">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mt-2"><span class="landing-page-topic">
+        Множество курсов
+      </span><p class="landing-page-text">
+        Изучай самые актуальные и разнообразные темы
+      </p></div>
+      <div class="col text-center mt-2"><span class="landing-page-topic">
+        Обучайтесь у профессионалов
+      </span><p class="landing-page-text">
+        Расчитывай на самое качественное образование онлайн
+      </p></div>
+      <div class="col text-center mt-2"><span class="landing-page-topic">
+        Задай вопрос учителю
+      </span><p class="landing-page-text">
+        Преподаватель ответит на каждый индивидуальный вопрос
+      </p></div>
+    </div>
+  </div>
 </div>
 <!-- end of section -->
 
+<!-- ----------------------------------------- tabs here -->
 
-
-<div id="tabs"><ul class="nav nav-tabs navbar-dark bg-dark"  id="courseName">
+<!-- <div id="tabs"><ul class="nav nav-tabs navbar-dark bg-dark"  id="courseName">
        <div class="col"></div>
     <li class="nav-item">
   <a class="nav-link active" id="home-tab" data-toggle="tab" href="#courseName" role="tab" aria-controls="home" aria-selected="true">Information and Commumication Technologies</a>
@@ -161,7 +189,8 @@
     </li>
      <div class="col"></div>
   </ul>
-  <div class="tab-content" id="myTabContent">
+</div> -->
+ <!--  <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="ict" role="tabpanel" aria-labelledby="home-tab">
       <table class="table table-sm table-borderless">
   <tbody class="text-left">
@@ -262,9 +291,131 @@
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
   </div>
-
+ -->
+ <!-- -----------------------------------------end of tabs -->
 
   <div id="section2">
+    
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-5">
+      <div class="card" id="section-landing-card">
+  <div class="card-body">
+    <div class="col mt-2"><p class="section-landing-page-topic">
+        Почти самый большой выбор курсов в мире
+      </p>
+      <p class="section-landing-page-text">
+        Выбирайте из более чем (почти) 100 000 онлайн-видеокурсов; новые курсы добавляются на сайт каждый месяц
+      </p></div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Разработка</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Дизайн</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">ИТ и ПО</a>
+          <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Дизайн</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-4">
+          <div class="card carousel-card">
+            <img src="images/blur.jpg" class="card-img-top" alt="">
+              <div class="carousel-card-content">
+                <p class="carousel-card-heading">Advanced CSS and Sass</p>
+                <p class="carousel-card-name">Bekkaliyev Assan</p>
+                <p class="carousel-card-price">12,99$</p>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-4">
+          <div class="card carousel-card">
+            <img src="images/blur_1.jpg" class="card-img-top" alt="">
+              <div class="carousel-card-content">
+                <p class="carousel-card-heading">Полный курс по JavaScript</p>
+                <p class="carousel-card-name">Nurgaliyeva Sanya</p>
+                <p class="carousel-card-price">17,00$</p>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-4">
+          <div class="card carousel-card">
+            <img src="images/Blur.png" class="card-img-top" alt="">
+              <div class="carousel-card-content">
+                <p class="carousel-card-heading">Java для начинающих</p>
+                <p class="carousel-card-name">Darbayev Nurdaulet</p>
+                <p class="carousel-card-price">14,99$</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-4">
+          <div class="card carousel-card">
+            <img src="images/blur_4.jpg" class="card-img-top" alt="">
+              <div class="carousel-card-content">
+                <p class="carousel-card-heading">Тестирование ПО для начинающих</p>
+                <p class="carousel-card-name">Bekkaliyev Assan</p>
+                <p class="carousel-card-price">12,99$</p>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-4">
+          <div class="card carousel-card">
+            <img src="images/blur_3.jpg" class="card-img-top" alt="">
+              <div class="carousel-card-content">
+                <p class="carousel-card-heading">Java Toutorial for complete beginers</p>
+                <p class="carousel-card-name">Nurgaliyeva Sanya</p>
+                <p class="carousel-card-price">17,00$</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+    </div>
+<!--     <div class="carousel-item">
+      
+
+
+    </div> -->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">...</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- --------------------------next line -->
+</div>
     <!-- begin of carouel -->
     <!-- <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -340,8 +491,8 @@
     </div>
   </div>
 </div> -->
-
-<section class="service-sec" id="benefits">
+<!-- ---------------------------------------sections here -->
+<!-- <section class="service-sec" id="benefits">
   <div class="container">
     <div class="row">
         <div class="">
@@ -372,14 +523,15 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+<!-- ---------------------------------------end of section2 -->
 </div>
 
 
 
 
 
-<footer>
+<!-- <footer>
   <div class="container">
     <div class="row">
       <p class="col">Made with <i class="fas fa-heart"></i> for <a href="https://www.kbtu.kz/"><i class="fas fa-university"></i></a> in Almaty<p/>
@@ -387,6 +539,31 @@
       <p class="col" align="right"><a href="">About</a> | studyhelper@gmail.com</p>
     </div>
   </div>
-</footer>
+</footer> -->
+<div class="transitional-line">
+  <p class="transitional-line-heading">Тест-драйв нашего сервиса</p>
+  <p class="transitional-line-text">Опробуйте бесплатные уроки по данным курсам</p>
+    <div class="container">
+      <div class="row">
+        <a href="" class="transitional-line-btn btn mx-auto mt-3">Начинайте действовать</a>
+      </div>
+    </div>
+</div>
+<div class="section3">
+  <div class="container-fluid">
+    <p class="section3-courses mt-3">Популярные курсы</p>
+    <div class="row">
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-laptop-code"></i> Разработка</a></div>
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-chart-pie"></i> Бизнес</a></div>
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-desktop"></i> ИТ и ОП</a></div>
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-drafting-compass"></i> Дизайн</a></div>
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-search-dollar"></i> Маркетинг</a></div>
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-book"></i> Личностный рост</a></div>
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-camera-retro"></i> Фотография</a></div>
+      <div class="col-3 section3-courses-items"><a href="" class="btn"><i class="fas fa-music"></i> Музыка</a></div>
+    </div>
+  </div>
+</div>
+<div class="section4"></div>
 </body>
 </html>

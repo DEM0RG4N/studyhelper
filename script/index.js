@@ -89,4 +89,16 @@ $(document).ready(function() {
         scrollTop: position
     },1000);
 });
+
+
+	// scrolling navbar
+	$(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('#navigation-bar').addClass('background');
+            }
+
+            else {
+                  $('#navigation-bar').removeClass('background');
+            }
+     })
 }); 

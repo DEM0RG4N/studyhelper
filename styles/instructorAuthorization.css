@@ -163,7 +163,18 @@ img
 }
 
 /*prelodaer*/
-.loaderBox
+.loader
+{
+  position: fixed;
+  top: 30%;
+  left: 35%;
+}
+.loader img
+{
+  width: 400px;
+  height: 300px;
+}
+/*.loaderBox
 {
   position: absolute;
   margin: auto;
@@ -173,6 +184,7 @@ img
   left: 0;
   width: 100px;
   height: 100px;
+  background: url('../images/prelodaer.gif');
 }
 .loadeAnim2,
 .loadeAnim3,
@@ -214,4 +226,4 @@ img
 @keyframes topToBottom {
     from {transform: rotate(0deg);}
     to {transform: rotate(-360deg);}
-}
+}*/

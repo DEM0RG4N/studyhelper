@@ -2,28 +2,37 @@
   --input-padding-x: 1.5rem;
   --input-padding-y: 0.75rem;
 }
-.navbar-brand
-{ 
-position: relative;
-margin-top: 0;
-margin-bottom: 0;
+nav:not(#navigation-bar)
+{
+      background: rgba(0, 0, 0, 0);
+      height: 70px;
+      margin-top: -10px;
 }
 nav
 {
-      background: rgba(0, 0, 0, 0);
+  margin-top: -10px;
+}
+.background{
+  background: linear-gradient(to bottom, white, white), linear-gradient(to left, #E25658, #C94D4F);
+  background-repeat: no-repeat;
+  background-size: 100% 90%, 100% 100%;
+  box-shadow: 0 0 5px;
 }
 .navbar #navbarDropdownMenuLink,
 .navbar #becomeAnInstructor
 {
-  font-size: 18px;
-  color: white;
+  font-size: 17px;
+  color: black;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  border-radius: 0 0 0 0;
   
 }
 
 .navbar #navbarDropdownMenuLink:hover,
 .navbar #becomeAnInstructor:hover
 {
-  text-decoration: underline; 
+background: rgba(0, 0, 0, .1);
 }
 
 textarea:focus,
@@ -49,7 +58,7 @@ a[role="button"]:after
 {
   box-shadow: transparent;
 }
-.card {
+.card:not(#section-landing-card):not(.carousel-card) {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   width: 50%;
@@ -231,39 +240,219 @@ a[role="button"]:after
 
 /* ------------------------------------------*/
 
-#tabs {
-  position: absolute;
-  width: 100%;
-}
 #section {
-  height: 95vh;
-  background: url("../images/minimalistMountainsMainPageSection1.jpg") no-repeat center center fixed;
+  height: 85vh;
+  background: url("../images/learning_man.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top:-92px; 
+  z-index: -1;
+}
+.landing-page
+{
+  height: 15vh;
+  background: #0a4273;
+background: -moz-linear-gradient(left, #0a4273 0%, #0f2440 100%);
+background: -webkit-linear-gradient(left, #0a4273 0%,#0f2440 100%);
+background: linear-gradient(to right, #0a4273 0%,#0f2440 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4273', endColorstr='#0f2440',GradientType=1 );
+}
+.landing-page-topic
+{
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.landing-page-text
+{
+  color: #fff;
+  font-family: sans-serif;
+  margin-top: 6px;
+}
+.container-fluid
+{
+  width: 87%;
 }
 #section2 {
-  height: 100vh;
+  height: 60vh;
+  margin-top: 60px;
 }
-table
+
+#section2 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
 {
-  margin-top: 25px;
+  border: none;
+  border-bottom: 7px solid;
+  border-bottom-color: #E25658;
+  color: black;
 }
-.tab-pane {
-  margin-top: 14px;
-}
-td a
+#section2 .nav-link:not(.active)
 {
-  margin-left: 40px;
+  color: black;
+  border: none;
 }
-/*--------------------------------SearchBox--------------------------------------------*/
-    /*ДА ПОМЕНЯЙ ТЫ СКА УЖЕ ЭТОТ ЦВЕТ*/
-    .searchForm {
-      padding-top: 170px;
-      padding-left: 49px;
-    }
+#section-landing-card
+{
+  border-radius: 0 0 0 0;
+  background: #EAE9D2;
+  height: 50vh;
+  border: none;
+}
+#section-landing-card p
+{
+  color: black;
+  width: 100%;
+}
+
+.section-landing-page-topic
+{
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 70px;
+}
+.carousel-card
+{
+  border-radius: 0 0 0 0;
+  height: 273px;
+}
+.carousel-card-heading
+{
+  font-size: 17px;
+  color: #3d4342;
+  font-family: sans-serif;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.carousel-card-name
+{
+  font-size: 14px;
+}
+.carousel-card-content
+{
+  width: 90%;
+  margin-left: 10px;
+}
+.carousel-card-price
+{
+  text-align: right;
+  font-weight: bold;
+}
+.card-img-top
+{
+  height: 45%;
+  border-radius: 0 0 0 0;
+}
+
+.carousel-control-prev
+{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: #0A4273;
+  margin-top: 98px; 
+  margin-left: -20px; 
+}
+.carousel-control-next
+{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: #0A4273;
+  margin-top: 98px; 
+  margin-right: -20px;
+}
+.carousel-control-prev:hover
+{
+  background: #0A4273;
+}
+.carousel-control-next:hover
+{
+  background: #0A4273;
+}
+/* ////////////newline//////////////////// */
+.transitional-line
+{
+  background: linear-gradient(to right, #0A4273, #0F2440), linear-gradient(to left, #E25658, #C94D4F);
+  background-repeat: no-repeat;
+  background-size: 100% 97%, 100% 100%;
+  height: 45vh;
+}
+.transitional-line-heading
+{
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 60px;
+}
+.transitional-line-text
+{
+  color: #fff;
+  text-align: center;
+  font-size: 18px;  
+  margin-top: 20px;
+}
+.transitional-line-btn
+{
+  border-color: #E25658;
+  background: #E25658;
+  border-radius: 0 0 0 0;
+  color: #fff;
+}
+.transitional-line-btn:hover
+{
+  color: #fff;
+  background: #C94D4F;
+  border-color: #C94D4F;
+}
+
+.section3
+{
+  height: 37vh;
+}
+.section3-courses
+{
+  font-size: 25px;
+
+}
+.section3-courses-items
+{
+  padding-top: 10px;
+}
+.section3-courses-items a
+{
+  border-radius: 0 0 0 0;
+  width: 250px;
+  height: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  font-weight: lighter;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.section3-courses-items a:hover
+{
+  box-shadow: 0 7px 13px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
+}
+.section4
+{
+  background: linear-gradient(to right, #EAE9D2, #EAE9D2), linear-gradient(to left, #E25658, #C94D4F);
+  background-repeat: no-repeat;
+  background-size: 100% 97%, 100% 100%;
+  height: 50vh;
+}
+
+
+
+
+
+
 
 .d-block
 {
@@ -271,31 +460,10 @@ td a
   height: 500px;
 }
 
-.card-img-top
-{
-  width: 50%;
-  height: 40%;
-  margin-top: 15px;
-}
 #landText
 {
   font-size: 20px;
   left: 80px;
-}
-#landCardText
-{
-  font-size: 18px;
-}
-#landText a
-{
-  color: black;
-}
-hr
-{left: 20px;
-}
-#landCardTextHr
-{
-  margin-left: 0px;
 }
 #courseName a:not(.active):not(.disabled)
 {
@@ -313,39 +481,33 @@ hr
 
 #logo
 {
-  width: 200px;
-  margin-left:  -140px;
+  width: 170px;
 }
 
 #loginButton
 {
-    border-color: #17a2b8;
+    border-color: grey;
     background: rgba(0, 0, 0, 0);
-    color: #17a2b8;
+    color: grey;
+    border-radius: 0 0 0 0;
 }
 #loginButton:hover
 {
-    border-color: #17a2b8;
-    background: #17a2b8; 
-    color: #343a40;  
+    border-color: black;
+    color: black;  
 }
 #signupButton:hover
 {
-    border-color: #17a2b8;
-    background: #17a2b8; 
-    color: #343a40;
+    border-color: #0A4273;
+    background: #0f2448; 
+    color: #fff;
 }
 #signupButton
 {
-    border-color: #17a2b8;
-    background: rgba(0, 0, 0, 0);
-    color: #17a2b8; 
-}
-.navbar-brand
-{ 
-position: relative;
-margin-top:0;
-font-size: 25px;
+    border-color: #0A4273;
+    background: #0A4273;
+    color: #fff;
+    border-radius: 0 0 0 0; 
 }
 
 footer
@@ -363,15 +525,4 @@ footer a
   margin-bottom: 0;
   padding-bottom: 0;
   text-decoration: none;
-}
-img
-{
-  width: 210px;
-}
-
-.disabled,
-.disabled:hover
-{
-  color: grey;
-  pointer-events: none;
 }
