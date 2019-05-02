@@ -58,7 +58,7 @@ a[role="button"]:after
 {
   box-shadow: transparent;
 }
-.card:not(#section-landing-card):not(.carousel-card) {
+.card:not(#section-landing-card):not(.carousel-card):not(.section4-courses-content-comment-card) {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   width: 50%;
@@ -341,7 +341,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4273', end
   text-align: right;
   font-weight: bold;
 }
-.card-img-top
+.carousel-card img
 {
   height: 45%;
   border-radius: 0 0 0 0;
@@ -379,21 +379,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4273', end
   background: linear-gradient(to right, #0A4273, #0F2440), linear-gradient(to left, #E25658, #C94D4F);
   background-repeat: no-repeat;
   background-size: 100% 97%, 100% 100%;
-  height: 45vh;
+  height: 50vh;
 }
 .transitional-line-heading
 {
   color: #fff;
   text-align: center;
   font-size: 25px;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 .transitional-line-text
 {
   color: #fff;
   text-align: center;
-  font-size: 18px;  
-  margin-top: 20px;
+  font-size: 18px;
 }
 .transitional-line-btn
 {
@@ -411,7 +410,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4273', end
 
 .section3
 {
-  height: 37vh;
+  height: 35vh;
 }
 .section3-courses
 {
@@ -436,19 +435,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4273', end
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
+.section3-courses-content
+{
+  margin-top: -10px;
+}
 .section3-courses-items a:hover
 {
-  box-shadow: 0 7px 13px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.25), 0 3px 5px rgba(0,0,0,0.22);
 }
 .section4
 {
   background: linear-gradient(to right, #EAE9D2, #EAE9D2), linear-gradient(to left, #E25658, #C94D4F);
   background-repeat: no-repeat;
-  background-size: 100% 97%, 100% 100%;
-  height: 50vh;
+  background-size: 100% 98%, 100% 100%;
+  height: 70vh;
+}
+.section4-courses
+{
+  font-size: 25px;
+  padding-top: 20px
 }
 
-
+.section4-courses-content-comment-card
+{
+  height: 350px;
+}
+.section4-courses-content-comment-card img
+{
+  width: 120px;
+  align-self: center;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.section4-courses-content-comment-card .card-title
+{
+  text-align: center;
+}
 
 
 
@@ -512,17 +534,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4273', end
 
 footer
 {
-  background-color: #343a40;
-  bottom: 0;
-  position: absolute;
+  background-color: #fff;
   width: 100%;
-
 } 
 footer p,
 footer a
 {
-  color: #9a9da0;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  color: #0A4273;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+footer #logo
+{
+  width: 100px;
+}
+footer .container-fluid
+{
+  width: 96%;
+}
+footer #about
+{
+
 }
