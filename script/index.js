@@ -70,25 +70,12 @@ $(document).ready(function() {
 		$("#searchTab").hide();
 	});
 
-	$("a[href^='#benefits']").click(function(e) {
-    e.preventDefault();
-    
-    var position = $($(this).attr("href")).offset().top;
-
-    $("body, html").animate({
-        scrollTop: position
-    },1000);
-});
-
-	$("a[href^='#courseName']").click(function(e) {
-    e.preventDefault();
-    
-    var position = $($(this).attr("href")).offset().top;
-
-    $("body, html").animate({
-        scrollTop: position
-    },1000);
-});
+	$("#section").click(function () {
+		$("#signupCard").hide();
+		statusForSingup = false;
+		$("#loginCard").hide();
+		statusForLogin = false;
+	});
 
 
 	// scrolling navbar
@@ -100,5 +87,19 @@ $(document).ready(function() {
             else {
                   $('#navigation-bar').removeClass('background');
             }
+
      })
+
+	$('#loginButton').click(function(){
+            	$('body, html').animate({
+            		scrollTop: 0
+            	}, 500);
+
+            });
+	$('#signupButton').click(function(){
+            	$('body, html').animate({
+            		scrollTop: 0
+            	}, 500);
+
+            });
 }); 
