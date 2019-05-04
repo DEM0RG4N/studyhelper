@@ -5,7 +5,6 @@ $(document).ready(function() {
         if (!statusForLogin && !statusForSingup) {
         $("#loginCard").show();
         statusForLogin = true;
-        $("#searchTab").hide();
     }
     else if (statusForLogin && !statusForSingup) {
         $("#loginCard").hide();
@@ -58,9 +57,5 @@ $(document).ready(function() {
         $("#searchTab").hide();
     });
 
-    $("#section").click(function () {
-        $("#signupCard").hide();
-        statusForSingup = false;
-        $("#loginCard").hide();
-        statusForLogin = false;
-    });
+
+}); 
