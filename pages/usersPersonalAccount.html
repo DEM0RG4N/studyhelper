@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Users personal account</title>
+    
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <script src="../script/usersPersonalAccount.js" defer></script>
+<link rel="stylesheet" href="../styles/usersPersonalAccount.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md" id="navigation-bar">         
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+<div class="col-5">
+          <ul class="navbar-nav">
+              
+                  
+                   <li class="nav-item">
+             <a class="nav-link mr-1 btn" id="becomeAnInstructor" href="../pages/instructorAuthorization.html">Станьте преподавателем</a>
+             </li>
+
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Курсы
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <a class="dropdown-item" href="..\secondaryPage\ictLandPage.html">Разработка</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item disabled" href="#">ИТ и ПО</a>
+                   <a class="dropdown-item disabled" href="#">Дизайн</a>
+                   <a class="dropdown-item disabled" href="#">Бизнес</a>
+                   <a class="dropdown-item disabled" href="#">Фотография</a>
+                   <a class="dropdown-item disabled" href="#">Личностный рост</a>
+                   <a class="dropdown-item disabled" href="#">Маркетинг</a>
+                   <a class="dropdown-item disabled" href="#">Музыка</a>
+                 </div>
+               </li> 
+               </ul>
+        </div>        
+        <div class="col">
+          <a class="navbar-brand mx-auto" href="#">
+              <img src="../images/logo.png" id="logo"></a>
+        </div>
+
+   
+        <div class="col-auto">
+          <form class="form-inline">
+          <button type="button" class="btn mr-1" id="loginButton">Войти</button>
+          <button type="button" class="btn btn-info" id="signupButton">Зарегистрироваться</button>
+          </form>
+        </div>
+    </div>
+  </nav>
+<div id="section">
+<div class="container " id="loginCard">
+  <div class="row card mx-auto">
+    <div class="col-10 mx-auto">
+      <div class="login d-flex align-items-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-12 mx-auto">
+              <h3 class="login-heading mb-4 text-center">Добро пожаловать</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Имя пользователя</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Пароль</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Запомнить меня</label>
+                </div>
+                <button class="btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Войти</button>
+                <div class="text-center">
+                  <a class="small" href="#">Забыли пароль? </a>
+                  <span>|
+                  </span>
+                  <a class="small" href="#" id="signupLink">Зарегистрироваться</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--                                         -------------------------------                            ------>
+<div class="container" id="signupCard">
+  <div class="row card mx-auto">
+    <div class="col-10 mx-auto">
+      <div class="login d-flex align-items-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-12 mx-auto">
+            <h3 class="login-heading mb-4 text-center">Создайте аккаунт</h3>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                <label for="inputUserame">Имя пользователя</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputID" class="form-control" placeholder="Email address" required>
+                <label for="inputID">ID</label>
+              </div>
+            
+
+              <div class="form-label-group">
+                <input type="password" id="inputPass" class="form-control" placeholder="Password" required>
+                <label for="inputPass">Пароль</label>
+              </div>
+              
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                <label for="inputConfirmPassword">Подтвердить пароль</label>
+              </div>
+
+              <button class="btn btn-lg btn-block text-uppercase font-weight-bold" type="submit">Зарегистрироваться</button>
+              <div class="text-center">
+                <span class="small">Уже имеете аккаунт?</span>
+                <a class="small" href="#" id="loginLink">Войти</a>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+  <div class="my-course-selector">
+    <nav class="my-course-selector-nav">
+          <div class="container">
+            <p class="my-course-selector-header">Мои курсы</p>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Все курсы</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Интересы</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Архив</a>
+            </div>
+          </div>
+        </nav>
+<div class="container">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            
+        <div class="row">
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 25%</p>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 10%</p>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 40%</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 60%</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 25%</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 25%</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 25%</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card my-course-selector-card">
+              <img src="../images/blur.jpg" class="card-img-top" alt="">
+                <div class="my-course-selector-card-content">
+                  <p class="my-course-selector-card-heading">Advanced CSS and Sass</p>
+                  <p class="my-course-selector-card-name">Bekkaliyev Assan</p>
+                  <div class="progress my-course-selector-card-progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="my-course-selector-card-progress-label">Пройдено на 25%</p>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        </div>
+  </div>
+</div>
+
+  
+
+
+
+
+  <div class="line-before-footer"></div>
+  <footer>
+  <div class="container-fluid">
+    <div class="row">
+      <a class="col navbar-brand">
+              <img src="../images/logo.png" id="logo"></a>
+      <div class="col text-right">
+        <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-mug-hot"></i> in Almaty<p/>
+          
+        <p id="about"><a href="">About</a> | studyhelper@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
