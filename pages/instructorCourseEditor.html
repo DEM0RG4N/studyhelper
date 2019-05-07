@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Instructor course editor</title>
+    
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <script src="../script/instructorCourseEditor.js" defer></script>
+<link rel="stylesheet" href="../styles/instructorCourseEditor.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md" id="navigation-bar">         
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+<div class="col-5">
+          <ul class="navbar-nav">
+              
+                  
+                   <li class="nav-item">
+             <a class="nav-link mr-1 btn" id="becomeAnInstructor" href="../pages/instructorAuthorization.html">Станьте преподавателем</a>
+             </li>
+
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Курсы
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <a class="dropdown-item" href="..\pages\secondaryLandPage.html">Разработка</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item disabled" href="#">ИТ и ПО</a>
+                   <a class="dropdown-item disabled" href="#">Дизайн</a>
+                   <a class="dropdown-item disabled" href="#">Бизнес</a>
+                   <a class="dropdown-item disabled" href="#">Фотография</a>
+                   <a class="dropdown-item disabled" href="#">Личностный рост</a>
+                   <a class="dropdown-item disabled" href="#">Маркетинг</a>
+                   <a class="dropdown-item disabled" href="#">Музыка</a>
+                 </div>
+               </li> 
+               </ul>
+        </div>        
+        <div class="col">
+          <a class="navbar-brand mx-auto" href="../index.html">
+              <img src="../images/logo.png" id="logo"></a>
+        </div>
+
+   
+        <div class="col-auto">
+          <form class="form-inline">
+          <button type="button" class="btn mr-1" id="loginButton">Войти</button>
+          <button type="button" class="btn btn-info" id="signupButton">Зарегистрироваться</button>
+          </form>
+        </div>
+    </div>
+  </nav>
+
+        <div class="card" id="ContetnOfTopicCard">
+    <div class="card-body">
+      <form>
+            <div class="mb-3">
+    <label for="presntation">Additional files</label>
+    <div class="input-group">
+    <input type="text" class="form-control" readonly id="fileBrowser" placeholder="There is your list of additional files">
+    <div class="input-group-append">
+      <label class="input-group-btn">
+      <span class="btn">
+        Browse<input type="file" style="display: none;" multiple>
+      </span>
+      </label>
+    </div>
+  </div>
+  <small id="emailHelp" class="form-text text-muted">Click on "Browse" button and select your additional DOCS and PowerPoint Presentations</small>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Name of course</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  
+  
+  <form>
+    <div class="form-group">
+      <label for="additionalInformation">Description of the topic</label>
+      <textarea class="form-control" id="additionalInformation" rows="3"></textarea>
+    </div>
+  </form>
+    <a href="instructorHomePage.html" class="btn btn-success btn-block">Create the course</a>
+      </form>
+    </div>
+    </div>
+
+  <footer>
+  <div class="line-before-footer"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <a class="col navbar-brand">
+              <img src="../images/logo.png" id="logo"></a>
+      <div class="col text-right">
+        <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-mug-hot"></i> in Almaty<p/>
+          
+        <p id="about"><a href="">About</a> | studyhelper@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
