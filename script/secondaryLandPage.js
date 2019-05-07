@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var statusForLogin = false;
     var statusForSingup = false;
@@ -5,6 +6,7 @@ $(document).ready(function() {
         if (!statusForLogin && !statusForSingup) {
         $("#loginCard").show();
         statusForLogin = true;
+        $("#searchTab").hide();
     }
     else if (statusForLogin && !statusForSingup) {
         $("#loginCard").hide();
@@ -54,8 +56,27 @@ $(document).ready(function() {
         $("#loginCard").show();
         statusForSingup = false;
         statusForLogin = true;
-        $("#searchTab").hide();
     });
 
+    
+    $(".carousel-control-prev").hide();
+    var carouselLength = $('.carousel-item').length;
+    var carouselActive = $('.carousel-inner .active').index();
+    $('.carousel-control-next').click(function () {
+        carouselActive = carouselActive + 1;
+    if (carouselActive == carouselLength - 1)
+    {
+        $(".carousel-control-prev").show();
+        $(".carousel-control-next").hide(); 
+    }
+    });
 
+    $('.carousel-control-prev').click(function () {
+        carouselActive = carouselActive - 1;
+    if (carouselActive == 0)
+    {
+        $(".carousel-control-prev").hide();
+        $(".carousel-control-next").show(); 
+    }
+    });
 }); 

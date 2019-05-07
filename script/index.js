@@ -84,4 +84,25 @@ $(document).ready(function() {
             	}, 500);
 
             });
+
+	$(".carousel-control-prev").hide();
+    var carouselLength = $('.carousel-item').length;
+    var carouselActive = $('.carousel-inner .active').index();
+    $('.carousel-control-next').click(function () {
+        carouselActive = carouselActive + 1;
+    if (carouselActive == carouselLength - 1)
+    {
+        $(".carousel-control-prev").show();
+        $(".carousel-control-next").hide(); 
+    }
+    });
+
+    $('.carousel-control-prev').click(function () {
+        carouselActive = carouselActive - 1;
+    if (carouselActive == 0)
+    {
+        $(".carousel-control-prev").hide();
+        $(".carousel-control-next").show(); 
+    }
+    });
 }); 

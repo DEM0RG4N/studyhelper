@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-      <script src="../script/secondaryLandPage.js" defer></script>
+      <script src="../script/secondaryLandPage.js" defer=""></script>
 <link rel="stylesheet" href="../styles/secondaryLandPage.css">
 </head>
 
@@ -35,7 +35,7 @@
                    Курсы
                  </a>
                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                   <a class="dropdown-item" href="..\secondaryPage\ictLandPage.html">Разработка</a>
+                   <a class="dropdown-item" href="../pages/secondaryLandPage.html">Разработка</a>
                    <div class="dropdown-divider"></div>
                    <a class="dropdown-item disabled" href="#">ИТ и ПО</a>
                    <a class="dropdown-item disabled" href="#">Дизайн</a>
@@ -49,7 +49,7 @@
                </ul>
         </div>        
         <div class="col">
-          <a class="navbar-brand mx-auto" href="#">
+          <a class="navbar-brand mx-auto" href="../index.html">
               <img src="../images/logo.png" id="logo"></a>
         </div>
 
@@ -156,7 +156,7 @@
       <p class="section3-header">Рекомендуемые уроки по теме "Разработка"</p>
 
 
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="row">
@@ -285,10 +285,10 @@
     </div> -->
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <i class="fas fa-angle-left"></i>
   </a>
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <i class="fas fa-angle-right"></i>
   </a>
 </div>
     </div>
@@ -343,77 +343,86 @@
       <p>Изучение программирование на языке Python с нуля до проффесионала | Автор: <a href="">Беккалиев Асан</a></p>
         <div class="container">
       <div class="row" id="section3-content-course-name-option">
-          <a href="#" class="btn section3-content-btn col mr-3">Посетить курс</a>
+          <a href="secondaryPage.html" class="btn section3-content-btn col mr-3">Посетить курс</a>
           <p class="section3-content-course-price">15,99$</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<p class="section3-header">Популярные темы</p>
-<div class="row section3-courses-content">
-      <div class="col section3-courses-items active"><a href="" class="btn">Python</a></div>
-      <div class="col section3-courses-items"><a href="" class="btn">Веб-разработка</a></div>
-      <div class="col section3-courses-items"><a href="" class="btn">JavaScript</a></div><div class="col section3-courses-items"><a href="" class="btn">Java</a></div><div class="col section3-courses-items"><a href="" class="btn">React</a></div>
-
-      <div class="col section3-courses-items"><a href="" class="btn">C#</a></div>
-      <div class="col section3-courses-items"><a href="" class="btn">Unity</a></div>
-      <div class="col section3-courses-items"><a href="" class="btn">Angular</a></div><div class="col section3-courses-items"><a href="" class="btn">Node.js</a></div><div class="col section3-courses-items"><a href="" class="btn">C++</a></div>
-
-      <div class="col section3-courses-items"><a href="" class="btn">CSS</a></div>
-      <div class="col section3-courses-items"><a href="" class="btn">PHP</a></div>
-      <div class="col section3-courses-items"><a href="" class="btn">Swift</a></div><div class="col section3-courses-items"><a href="" class="btn">Docker</a></div><div class="col section3-courses-items"><a href="" class="btn">Unreal Engine</a></div>
     </div>
-    <p class="section3-header">Популярные преподаватели</p>
+<div class="section3-courses-content">
+  <div class="container">
+  <p class="section3-header">Популярные темы</p>
+    <div class="row">
+          <div class="col section3-courses-items active"><a href="secondaryPage.html" class="btn">Python</a></div>
+          <div class="col section3-courses-items"><a href="" class="btn">Веб-разработка</a></div>
+          <div class="col section3-courses-items"><a href="" class="btn">JavaScript</a></div><div class="col section3-courses-items"><a href="" class="btn">Java</a></div><div class="col section3-courses-items"><a href="" class="btn">React</a></div>
+    
+          <div class="col section3-courses-items"><a href="" class="btn">C#</a></div>
+          <div class="col section3-courses-items"><a href="" class="btn">Unity</a></div>
+          <div class="col section3-courses-items"><a href="" class="btn">Angular</a></div><div class="col section3-courses-items"><a href="" class="btn">Node.js</a></div><div class="col section3-courses-items"><a href="" class="btn">C++</a></div>
+    
+          <div class="col section3-courses-items"><a href="" class="btn">CSS</a></div>
+          <div class="col section3-courses-items"><a href="" class="btn">PHP</a></div>
+          <div class="col section3-courses-items"><a href="" class="btn">Swift</a></div><div class="col section3-courses-items"><a href="" class="btn">Docker</a></div><div class="col section3-courses-items"><a href="" class="btn">Unreal Engine</a></div>
+        </div>
+  </div>
+</div>
 
-        <div class="row section3-courses-content-instructors">
-      <div class="col">
-        <div class="card section3-courses-content-instructors-card">
-          <img class="card-img-top" src="../images/user.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Беккалиев Асан</h5>
-            <p class="card-text">JavaScript, React</p>
+<div class="container">
+    <div class="section3-courses-content-instructors">
+      <p class="section3-header">Популярные преподаватели</p>
+      
+          <div class="row">
+        <div class="col">
+          <div class="card section3-courses-content-instructors-card">
+            <img class="card-img-top" src="../images/user.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Беккалиев Асан</h5>
+              <p class="card-text">JavaScript, React</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card section3-courses-content-instructors-card">
-          <img class="card-img-top" src="../images/user.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Нургалиева Сания</h5>
-            <p class="card-text">Angular</p>
+        <div class="col">
+          <div class="card section3-courses-content-instructors-card">
+            <img class="card-img-top" src="../images/user.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Нургалиева Сания</h5>
+              <p class="card-text">Angular</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card section3-courses-content-instructors-card">
-          <img class="card-img-top" src="../images/user.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Дарбаев Нурдаулет</h5>
-            <p class="card-text">Android Development, Java</p>
+        <div class="col">
+          <div class="card section3-courses-content-instructors-card">
+            <img class="card-img-top" src="../images/user.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Дарбаев Нурдаулет</h5>
+              <p class="card-text">Android Development, Java</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card section3-courses-content-instructors-card">
-          <img class="card-img-top" src="../images/user.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Бериснбаева Асель</h5>
-            <p class="card-text">Unity, C#</p>
+        <div class="col">
+          <div class="card section3-courses-content-instructors-card">
+            <img class="card-img-top" src="../images/user.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Бериснбаева Асель</h5>
+              <p class="card-text">Unity, C#</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card section3-courses-content-instructors-card">
-          <img class="card-img-top" src="../images/user.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Ауталипов Аргун</h5>
-            <p class="card-text">PHP, Mongo</p>
+        <div class="col">
+          <div class="card section3-courses-content-instructors-card">
+            <img class="card-img-top" src="../images/user.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ауталипов Аргун</h5>
+              <p class="card-text">PHP, Mongo</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+  </div>
   </div>
   <div class="line-before-footer"></div>
   <footer>
