@@ -9,16 +9,16 @@ $(document).ready(function() {
 		$("#instructor").show();
 	});
 
-	$(window).on("load", function() {
-	preloaderFadeOutTime = 1200;
-	function hidePreloader() {
-	var preloader = $('.loader');
-	setTimeout(function(){
-        $('.container-fluid').removeClass('none');
-        preloader.hide();
-    }, 1200);
-	}
-	hidePreloader();
-	});
+	// $(window).on("load", function() {
+	// preloaderFadeOutTime = 1200;
+	// function hidePreloader() {
+	// var preloader = $('.loader');
+	// setTimeout(function(){
+ //        $('.container-fluid').removeClass('none');
+ //        preloader.hide();
+ //    }, 1200);
+	// }
+	// hidePreloader();
+	// });
 }); 
 
