@@ -101,6 +101,8 @@
   </div>
 </div>
 <!--                                         -------------------------------                            ------>
+
+<script src="./clientscripts/registration.js"></script>
 <div class="container" id="signupCard">
   <div class="row card mx-auto">
     <div class="col-10 mx-auto">
@@ -111,27 +113,22 @@
             <h3 class="login-heading mb-4 text-center">Создайте аккаунт</h3>
             <form class="form-signin">
               <div class="form-label-group">
-                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-                <label for="inputUserame">Имя пользователя</label>
-              </div>
-
-              <div class="form-label-group">
-                <input type="email" id="inputID" class="form-control" placeholder="Email address" required>
-                <label for="inputID">ID</label>
+                <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+                <label for="username">Имя пользователя</label>
               </div>
             
 
               <div class="form-label-group">
-                <input type="password" id="inputPass" class="form-control" placeholder="Password" required>
-                <label for="inputPass">Пароль</label>
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                <label for="password">Пароль</label>
               </div>
               
               <div class="form-label-group">
-                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
-                <label for="inputConfirmPassword">Подтвердить пароль</label>
+                <input type="password" id="password2" class="form-control" placeholder="Password" required>
+                <label for="password2">Подтвердить пароль</label>
               </div>
 
-              <button class="btn btn-lg btn-block text-uppercase font-weight-bold" type="submit">Зарегистрироваться</button>
+              <button class="btn btn-lg btn-block text-uppercase font-weight-bold" type="submit" id="createUser">Зарегистрироваться</button>
               <div class="text-center">
                 <span class="small">Уже имеете аккаунт?</span>
                 <a class="small" href="#" id="loginLink">Войти</a>

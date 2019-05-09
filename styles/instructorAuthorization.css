@@ -54,7 +54,7 @@ root {
   padding: var(--input-padding-y) var(--input-padding-x);
   height: auto;
 }
-.form-label-group:
+.form-label-group
 {
   box-shadow: none;
 }
