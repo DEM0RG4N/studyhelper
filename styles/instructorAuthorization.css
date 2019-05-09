@@ -1,10 +1,6 @@
-root {
+:root {
   --input-padding-x: 1.5rem;
   --input-padding-y: 0.75rem;
-}
-.none
-{
-  display: none;
 }
 .card:not(#landCard) {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -13,7 +9,7 @@ root {
   margin-top: 60px;
   margin-bottom: 40px;
   background: rgba(0, 0, 0, 0.4);
-
+  border-radius: 0 0 0 0;
 }
 #landCard
 {
@@ -42,6 +38,7 @@ root {
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
   padding: 0.75rem 1rem;
+  border-radius: 0 0 0 0;
 }
 
 .form-label-group {
@@ -53,6 +50,7 @@ root {
 .form-label-group>label {
   padding: var(--input-padding-y) var(--input-padding-x);
   height: auto;
+  border-radius: 0 0 0 0;
 }
 .form-label-group
 {
@@ -139,6 +137,7 @@ input[type="color"]:focus,
   color: #d87f77;
   border-color: #d87f77;
   background-color: transparent;
+  border-radius: 0 0 0 0;
 }
 .card .btn:hover
 {
@@ -163,17 +162,7 @@ img
 }
 
 /*prelodaer*/
-/*.loader
-{
-  position: fixed;
-  top: 30%;
-  left: 35%;
-}
-.loader img
-{
-  width: 400px;
-  height: 300px;
-}*/
+
 /*.loaderBox
 {
   position: absolute;
